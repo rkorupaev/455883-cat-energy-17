@@ -1,0 +1,30 @@
+.howitworks {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.howitworks__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.howitworks__list {
+  list-style: none;
+  padding-left: 80px;
+}
+
+.howitworks__text {
+  font-family: Arial;
+  color: $text-black;
+}
+
+.howitworks__text--healthy {
+  background-color: $green;
+  background-image: url(../img/advantage-leaf@1x.png);
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: -60px -60px;
+}
