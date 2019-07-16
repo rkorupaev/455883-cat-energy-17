@@ -4,6 +4,7 @@
   align-items: center;
   text-align: center;
   min-height: 480px;
+  margin-bottom: 22px;
 
   background: linear-gradient(to bottom, $green 100%);
   background: url(../img/index-background-mobile@1x.jpg);
@@ -32,7 +33,7 @@
   display: flex;
   text-transform: uppercase;
   background-color: $green;
-  width: 100%;
+  width: calc( 100% - 40px);
   min-height: 40px;
   color: $white;
   align-items: center;

@@ -1,0 +1,59 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  min-width: 280px;
+  min-height: 552px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.categories__item {
+  background-color: $grey;
+  margin-bottom: 20px;
+}
+
+.categories__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  padding-left: 91px;
+  margin-top: 40px;
+}
+
+.categories__item--weight-loss {
+  background-image: url(../img/icon-cat-slim.svg);
+  background-repeat: no-repeat;
+  background-size: 35px 49px;
+  background-position: 30px 22px;
+}
+
+.categories__item--gain-weight {
+  background-image: url(../img/icon-cat-pro.svg);
+  background-repeat: no-repeat;
+  background-size: 67px 28px;
+  background-position: 13px 45px;
+}
+
+.categories__text {
+  font-family: Arial;
+  padding-left: 20px;
+  padding-right: 35px;
+}
+
+.categories__button {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 57px;
+  text-transform: uppercase;
+  color: $black;
+  margin-left: 20px;
+  border-top: 1px solid $border-grey;
+}
+
+.categories__button img {
+  padding-left: 12px;
+}
