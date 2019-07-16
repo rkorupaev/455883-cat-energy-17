@@ -1,16 +1,50 @@
 .page-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
+  min-height: 260px;
   padding: 11px 20px 16px 20px;
-  border-bottom: solid 1px #e6e6e6;
+  // border-bottom: solid 1px #e6e6e6;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.page-header__logo {
+  height: 52px;
+  padding-top: 13px;
+}
+
+.main-nav {
+  padding-top: 21px;
+  height: 44px;
 }
 
 .main-nav__list {
-  display: none;
+  list-style: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 65px;
+  text-align: center;
+  min-width: 320px;
+
+
+  text-transform: uppercase;
+  color: $black;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .main-nav__toggler {
   background-color: transparent;
   border: 0;
+}
+
+.site-list__item {
+  border-bottom: 1px solid $border-grey;
+  padding-top: 24px;
+  padding-bottom: 20px;
 }
