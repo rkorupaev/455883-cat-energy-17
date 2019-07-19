@@ -21,10 +21,40 @@
   color: $text-black;
 }
 
-.howitworks__text--healthy {
-  background-color: $green;
-  background-image: url(../img/advantage-leaf@1x.png);
-  background-repeat: no-repeat;
-  background-size: 60px 60px;
-  background-position: -60px -60px;
+.howitworks__item {
+  margin-bottom: 26px;
 }
+
+.howitworks__item::before {
+  content: "";
+  display: block;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 20px;
+    background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.howitworks__item--healthy::before {
+  background-image: url(../img/advantage-leaf@1x.png);
+
+}
+
+.howitworks__item--powder::before {
+  background-image: url(../img/advantage-powder@1x.png);
+}
+
+.howitworks__item--functionalfood::before {
+  background-image: url(../img/advantage-dining@1x.png);
+}
+
+.howitworks__item--changes::before {
+  background-image: url(../img/advantage-clock@1x.png);
+}
+
+
+
+
+
