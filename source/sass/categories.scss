@@ -12,6 +12,7 @@
 .categories__item {
   background-color: $grey;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .categories__title {
@@ -23,18 +24,28 @@
   margin-top: 40px;
 }
 
-.categories__item--weight-loss {
+.categories__item::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: $green;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;}
+
+.categories__item--weight-loss::before {
   background-image: url(../img/icon-cat-slim.svg);
-  background-repeat: no-repeat;
   background-size: 35px 49px;
-  background-position: 30px 22px;
+  background-position: 10px 0px;
 }
 
-.categories__item--gain-weight {
+.categories__item--gain-weight::before {
   background-image: url(../img/icon-cat-pro.svg);
-  background-repeat: no-repeat;
   background-size: 67px 28px;
-  background-position: 13px 45px;
+  background-position: -15px 10px;
 }
 
 .categories__text {
