@@ -67,3 +67,22 @@
   margin-top: 35px;
   margin-bottom: 31px;
 }
+
+.example__before,
+.example__after {
+  border-bottom: 1px dashed $border-example-normal;
+  cursor: pointer;
+}
+
+.example__before,
+.example__after {
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $border-example-hover;
+  }
+}
+
+.example__before:active,
+.example__after:active {
+  border: none;
+}
