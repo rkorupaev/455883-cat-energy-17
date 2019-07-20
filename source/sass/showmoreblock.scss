@@ -41,3 +41,21 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
+.showmore-block__button:hover,
+.showmore-block__button:focus {
+  background-color: $button-hover-focus;
+}
+
+.showmore-block__button:active {
+  background-color: $button-hover-focus;
+  color: $button-text-active;
+}
+
+.showmore-block__button a:visited {
+  color: inherit;
+}
+
+.catalog__link:visited {
+  color: inherit;
+}

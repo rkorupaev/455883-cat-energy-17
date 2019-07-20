@@ -4,11 +4,21 @@
   align-items: center;
   background-color: $grey;
   padding-top: 39px;
-  // padding-bottom: 25px;
 }
 
 .page-footer__image {
   padding-bottom: 31px;
+}
+
+.page-footer__image {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.page-footer__image:active {
+  opacity: 0.6;
 }
 
 .page-footer__social {
@@ -30,6 +40,17 @@
   padding-right: 40px;
 }
 
+// .social__item {
+//   &:hover,
+//   &:focus {
+//     color: $green;
+//   }
+// }
+
+.social__item:active {
+  opacity: 0.3;
+}
+
 .page-footer__copyright {
   display: flex;
   align-items: center;
@@ -37,7 +58,6 @@
   min-width: 280px;
   padding-top: 22px;
   padding-bottom: 25px;
-
 }
 
 .copyright__text {
