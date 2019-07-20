@@ -50,22 +50,22 @@
 
 .categories__item--weight-loss::before {
   content: "";
-  background-image: url(../img/icon-cat-slim.svg);
+  background-image: url("../img/icon-cat-slim.svg");
   background-size: 35px 49px;
-  background-position: 10px 0px;
+  background-position: 10px 0;
   background-repeat: no-repeat;
 }
 
 .categories__item--gain-weight::before {
   content: "";
-  background-image: url(../img/icon-cat-pro.svg);
+  background-image: url("../img/icon-cat-pro.svg");
   background-size: 67px 28px;
   background-position: -15px 10px;
   background-repeat: no-repeat;
 }
 
 .categories__text {
-  font-family: Arial;
+  font-family: $side-text;
   padding-left: 20px;
   padding-right: 35px;
   color: $text-black;
@@ -82,10 +82,10 @@
   border-top: 1px solid $border-grey;
 }
 
-.categories__button:hover,
-.categories__button:focus {
+// .categories__button:hover,
+// .categories__button:focus {
 
-}
+// }
 
 .categories__button:active {
   opacity: 0.3;

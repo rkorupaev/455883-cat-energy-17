@@ -17,7 +17,7 @@
 }
 
 .howitworks__text {
-  font-family: Arial;
+  font-family: $side-text;
   color: $text-black;
 }
 
@@ -38,18 +38,17 @@
 }
 
 .howitworks__item--healthy::before {
-  background-image: url(../img/advantage-leaf@1x.png);
-
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
 .howitworks__item--powder::before {
-  background-image: url(../img/advantage-powder@1x.png);
+  background-image: url("../img/advantage-powder@1x.png");
 }
 
 .howitworks__item--functionalfood::before {
-  background-image: url(../img/advantage-dining@1x.png);
+  background-image: url("../img/advantage-dining@1x.png");
 }
 
 .howitworks__item--changes::before {
-  background-image: url(../img/advantage-clock@1x.png);
+  background-image: url("../img/advantage-clock@1x.png");
 }

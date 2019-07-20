@@ -7,7 +7,7 @@
   margin-bottom: 22px;
 
   background: linear-gradient(to bottom, $green 100%);
-  background: url(../img/index-background-mobile@1x.jpg);
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: 320px 305px;
   background-repeat: no-repeat;
 }
@@ -33,7 +33,7 @@
   display: flex;
   text-transform: uppercase;
   background-color: $green;
-  width: calc( 100% - 40px);
+  width: calc(100% - 40px);
   min-height: 40px;
   color: $white;
   align-items: center;

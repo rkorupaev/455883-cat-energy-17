@@ -38,7 +38,7 @@
 .catalog__content-wrapper {
   display: flex;
   flex-direction: column;
-  width: 50%
+  width: 50%;
 }
 
 .catalog__name {
@@ -52,7 +52,7 @@
 }
 
 .catalog__characteristics {
-  font-family: "Arial";
+  font-family: $side-text;
   color: $text-black;
   font-size: 12px;
   line-height: 12px;
