@@ -1,0 +1,43 @@
+.showmore-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 208px;
+
+  background-image: url(../img/icon-plus.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 50% 26px;
+}
+
+.showmore-button__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  margin: 0;
+  padding-top: 84px;
+  padding-bottom: 11px;
+}
+
+
+.showmore-button__text {
+  line-height: 16px;
+  color: $text-black;
+  margin: 0;
+  padding-bottom: 22px;
+}
+
+.showmore-block__button {
+  background-color: $grey;
+  color: $text-black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+  min-height: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

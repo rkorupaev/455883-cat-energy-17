@@ -1,0 +1,60 @@
+.howitworks {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.howitworks__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.howitworks__list {
+  list-style: none;
+  padding-left: 80px;
+}
+
+.howitworks__text {
+  font-family: Arial;
+  color: $text-black;
+}
+
+.howitworks__item {
+  margin-bottom: 26px;
+}
+
+.howitworks__item::before {
+  content: "";
+  display: block;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 20px;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.howitworks__item--healthy::before {
+  background-image: url(../img/advantage-leaf@1x.png);
+
+}
+
+.howitworks__item--powder::before {
+  background-image: url(../img/advantage-powder@1x.png);
+}
+
+.howitworks__item--functionalfood::before {
+  background-image: url(../img/advantage-dining@1x.png);
+}
+
+.howitworks__item--changes::before {
+  background-image: url(../img/advantage-clock@1x.png);
+}
+
+
+
+
+
