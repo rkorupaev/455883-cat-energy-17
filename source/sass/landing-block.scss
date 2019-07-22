@@ -52,3 +52,41 @@
 .landing-block__button a:visited {
   color: inherit;
 }
+
+
+@media (min-width: $tablet-width) {
+  .landing-block {
+    background: none;
+    align-items: flex-start;
+  }
+
+  .landing-block__title {
+    color: $black;
+    max-width: 427px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .landing-block__slogan {
+    color: $black;
+  }
+
+  .landing-block__img {
+    align-self: center;
+    order: 3;
+  }
+
+  .landing-block__button {
+    max-width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .landing-block {
+    background: linear-gradient(to bottom, $green 100%);
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
+}

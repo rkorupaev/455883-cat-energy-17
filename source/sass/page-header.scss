@@ -72,6 +72,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 120px;
+  }
+
   .main-nav {
     padding: 0;
   }
@@ -92,26 +96,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav {
-    padding: 0;
-  }
-
-  .main-nav__list {
-    position: static;
-    flex-direction: row;
-    justify-content: space-between;
-    min-width: 480px;
-  }
-
-  .main-nav__toggler {
-    display: none;
-  }
-
-  .site-list__item {
-    border: 0;
-  }
-}
+// @media (min-width: $desktop-width) {
+// }
 
 .site-list__item--active {
   border-bottom: 2px solid $green;

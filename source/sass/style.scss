@@ -36,7 +36,7 @@ a {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .body-container {
     max-width: $desktop-width;
   }
