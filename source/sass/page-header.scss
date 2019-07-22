@@ -1,6 +1,8 @@
 .page-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
+
   min-height: 260px;
   padding: 11px 20px 16px 20px;
   padding-bottom: 0;
@@ -67,6 +69,48 @@
 
 .site-list__item a:visited {
   color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    padding: 0;
+  }
+
+  .main-nav__list {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 480px;
+  }
+
+  .main-nav__toggler {
+    display: none;
+  }
+
+  .site-list__item {
+    border: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding: 0;
+  }
+
+  .main-nav__list {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 480px;
+  }
+
+  .main-nav__toggler {
+    display: none;
+  }
+
+  .site-list__item {
+    border: 0;
+  }
 }
 
 .site-list__item--active {
