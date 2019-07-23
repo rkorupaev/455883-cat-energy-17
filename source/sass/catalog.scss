@@ -142,15 +142,19 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .catalog__item {
-    margin-right: 60px;
+    min-width: 324px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding: 0 40px;
+  }
   .catalog__item {
-    margin-right: 60px;
+    min-width: 245px;
   }
 }

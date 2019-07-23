@@ -84,6 +84,8 @@
 
 @media (min-width: $desktop-width) {
   .landing-block {
+    padding: 0 40px;
+
     background: linear-gradient(to bottom, $green 100%);
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
