@@ -13,10 +13,10 @@
   &:focus {
     opacity: 0.8;
   }
-}
 
-.page-footer__image:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -29,26 +29,6 @@
   margin: 0;
 }
 
-.social__item--vk {
-  padding-left: 73px;
-  padding-right: 37px;
-}
-
-.social__item--inst {
-  padding-right: 40px;
-}
-
-// .social__item {
-//   &:hover,
-//   &:focus {
-//     color: $green;
-//   }
-// }
-
-.social__item:active {
-  opacity: 0.3;
-}
-
 .page-footer__copyright {
   display: flex;
   align-items: center;
@@ -56,11 +36,6 @@
   min-width: 280px;
   padding-top: 22px;
   padding-bottom: 25px;
-}
-
-.copyright__text {
-  font-size: 16px;
-  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {

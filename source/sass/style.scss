@@ -22,7 +22,9 @@ a {
   overflow: hidden;
 }
 
-@import "normalize.scss", "variables.scss", "page-header.scss", "landing-block.scss", "categories.scss", "howitworks.scss", "page-footer.scss", "catalog.scss", "example.scss";
+@import "normalize.scss", "variables.scss", "page-header.scss", "landing-block.scss",
+ "categories.scss", "howitworks.scss", "page-footer.scss", "catalog.scss",
+  "example.scss", "social.scss", "copyright.scss";
 
 
 .body-container {
