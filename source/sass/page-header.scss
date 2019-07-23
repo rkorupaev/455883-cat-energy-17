@@ -1,10 +1,10 @@
 .page-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  // align-items: center;
+
   min-height: 260px;
   padding: 11px 20px 16px 20px;
-  // border-bottom: solid 1px #e6e6e6;
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -12,6 +12,15 @@
 .page-header__logo {
   height: 52px;
   padding-top: 13px;
+}
+
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
 }
 
 .main-nav {
@@ -47,4 +56,49 @@
   border-bottom: 1px solid $border-grey;
   padding-top: 24px;
   padding-bottom: 20px;
+}
+
+.site-list__item:hover,
+.site-list__item:focus {
+  opacity: 0.6;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
+}
+
+.site-list__item a:visited {
+  color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 120px;
+  }
+
+  .main-nav {
+    padding: 0;
+  }
+
+  .main-nav__list {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 480px;
+  }
+
+  .main-nav__toggler {
+    display: none;
+  }
+
+  .site-list__item {
+    border: 0;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+// }
+
+.site-list__item--active {
+  border-bottom: 2px solid $green;
 }

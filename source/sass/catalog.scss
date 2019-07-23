@@ -38,11 +38,11 @@
 .catalog__content-wrapper {
   display: flex;
   flex-direction: column;
-  width: 50%
+  width: 50%;
 }
 
 .catalog__name {
-  width: 72px;
+  width: 75px;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -52,7 +52,7 @@
 }
 
 .catalog__characteristics {
-  font-family: Arial;
+  font-family: $side-text;
   color: $text-black;
   font-size: 12px;
   line-height: 12px;
@@ -73,4 +73,88 @@
   min-height: 14px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.catalog__showmore-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 208px;
+  width: 100%;
+
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 50% 26px;
+}
+
+.catalog__showmore-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  margin: 0;
+  padding-top: 84px;
+  padding-bottom: 11px;
+}
+
+
+.catalog__showmore-text {
+  line-height: 16px;
+  color: $text-black;
+  margin: 0;
+  padding-bottom: 22px;
+}
+
+.catalog__showmore-button {
+  background-color: $grey;
+  color: $text-black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+  min-height: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-focus;
+  }
+
+  &:active {
+    background-color: $button-hover-focus;
+    color: $button-text-active;
+  }
+
+  &a:visited {
+    color: inherit;
+  }
+}
+
+.catalog__link:visited {
+  color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    min-width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 0 40px;
+  }
+  .catalog__item {
+    min-width: 245px;
+  }
 }

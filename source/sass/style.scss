@@ -1,6 +1,6 @@
-body{
-  max-width: 320px;
-  font-family: Oswald, Arial, sans-serif;
+body {
+  min-width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -12,15 +12,32 @@ a {
 
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
+  padding: 0 !important;
+  border: 0 !important;
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
 }
 
-@import "normalize.scss", "variables.scss", "page-header.scss", "page-main.scss", "landing-block.scss", "categories.scss",
-"howitworks.scss", "page-footer.scss", "catalog.scss", "showmoreblock.scss", "example.scss";
+@import "normalize.scss", "variables.scss", "page-header.scss", "landing-block.scss", "categories.scss", "howitworks.scss", "page-footer.scss", "catalog.scss", "example.scss";
 
+
+.body-container {
+  margin: 0 auto;
+  max-width: $mobile-width;
+}
+
+@media (min-width: $tablet-width) {
+  .body-container {
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .body-container {
+    max-width: $desktop-width;
+  }
+}

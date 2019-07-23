@@ -13,48 +13,78 @@
 
 .howitworks__list {
   list-style: none;
+  padding: 0;
   padding-left: 80px;
 }
 
 .howitworks__text {
-  font-family: Arial;
+  font-family: $side-text;
   color: $text-black;
+  margin: 0;
 }
 
 .howitworks__item {
   margin-bottom: 26px;
-}
+  position: relative;
 
-.howitworks__item::before {
-  content: "";
-  display: block;
-  background-color: $green;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  left: 20px;
-  background-repeat: no-repeat;
-  background-size: 60px 60px;
+  &::before {
+    content: "";
+    display: block;
+    background-color: $green;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: -80px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .howitworks__item--healthy::before {
-  background-image: url(../img/advantage-leaf@1x.png);
-
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
 .howitworks__item--powder::before {
-  background-image: url(../img/advantage-powder@1x.png);
+  background-image: url("../img/advantage-powder@1x.png");
 }
 
 .howitworks__item--functionalfood::before {
-  background-image: url(../img/advantage-dining@1x.png);
+  background-image: url("../img/advantage-dining@1x.png");
 }
 
 .howitworks__item--changes::before {
-  background-image: url(../img/advantage-clock@1x.png);
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
+@media (min-width: $tablet-width) {
+  .howitworks__list {
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 
+  .howitworks__item {
+    max-width: 324px;
+    min-height: 228px;
+    margin: 0;
 
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
+    }
+  }
 
+  .howitworks__text {
+    padding-top: 117px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .howitworks__item {
+    max-width: 245px;
+  }
+}
