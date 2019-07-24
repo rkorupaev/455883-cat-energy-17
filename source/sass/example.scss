@@ -32,25 +32,40 @@
   text-align: center;
 }
 
+.stats-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .stats-list__main-text {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  width: 124px;
+  height: 56px;
+  padding-top: 16px;
   margin: 0;
   margin-bottom: 8px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5%;
 }
 
 .stats-list__side-text {
+  position: absolute;
   font-family: $side-text;
   margin: 0;
-  width: 65px;
+  width: 86px;
+  top: 63px;
+  background-color: $grey;
 }
 
 .example__expenses {
   text-align: center;
   text-transform: uppercase;
   line-height: 20px;
-  margin-top: 16px;
+  margin-top: 38px;
   margin-bottom: 44px;
 }
 

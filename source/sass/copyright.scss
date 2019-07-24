@@ -1,6 +1,11 @@
 .copyright__text {
   font-size: 16px;
   line-height: 16px;
+  color: $text-black;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {

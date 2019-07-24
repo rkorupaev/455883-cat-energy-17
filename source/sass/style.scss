@@ -10,6 +10,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @import "normalize.scss", "variables.scss", "page-header.scss", "landing-block.scss",
 "categories.scss", "howitworks.scss", "page-footer.scss", "catalog.scss",
 "example.scss", "social.scss", "copyright.scss";
