@@ -4,6 +4,7 @@
   align-items: center;
   background-color: $grey;
   padding-top: 39px;
+  padding: 0 20px;
 }
 
 .page-footer__image {
@@ -42,5 +43,10 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-around;
+    padding: 0 30px;
+  }
+
+  .page-footer__image {
+    padding: 0;
   }
 }
