@@ -58,6 +58,7 @@
   .landing-block {
     background: none;
     align-items: flex-start;
+    padding-left: 120px;
   }
 
   .landing-block__title {
@@ -70,6 +71,8 @@
 
   .landing-block__slogan {
     color: $black;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .landing-block__img {
@@ -79,6 +82,9 @@
 
   .landing-block__button {
     max-width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 6px 0;
   }
 }
 

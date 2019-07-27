@@ -83,6 +83,8 @@
 .categories__button {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  line-height: 16px;
   min-width: 240px;
   height: 57px;
   text-transform: uppercase;
@@ -90,17 +92,11 @@
   margin-left: 20px;
   border-top: 1px solid $border-grey;
 
-  background-image: url("../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 11px;
-  background-position: 90px;
-
-  &:hover,
-  &:focus {
+  &:hover .categories__button-arrow,
+  &:focus .categories__button-arrow {
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
     background-size: 33px 11px;
-    background-position: 90px;
   }
 
   &:active {
@@ -108,9 +104,20 @@
   }
 }
 
+.categories__button-arrow {
+  display: block;
+  width: 33px;
+  height: 11px;
+  margin-left: 22px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 11px;
+}
+
 @media (min-width: $tablet-width) {
   .categories {
     min-height: 775px;
+    padding: 0 30px;
   }
 
   .categories__item {
@@ -121,7 +128,28 @@
   .categories__title,
   .categories__text,
   .categories__button {
-    max-width: 390px;
+    max-width: 384px;
+    padding-left: 53px;
+  }
+
+  .categories__title {
+    font-size: 36px;
+    line-height: 37px;
+    margin-top: 52px;
+    margin-bottom: 25px;
+  }
+
+  .categories__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .categories__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    border: 0;
   }
 
   .categories__img-background {
@@ -129,6 +157,11 @@
     height: 200px;
     top: 20%;
     left: 65%;
+  }
+
+  .categories__img-background::before {
+    width: 200px;
+    height: 200px;
   }
 }
 
