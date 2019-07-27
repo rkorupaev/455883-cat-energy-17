@@ -1,0 +1,38 @@
+.site-list__item {
+  border-bottom: 1px solid $border-grey;
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  & a:visited {
+    color: inherit;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    border: 0;
+  }
+}
+
+.site-list__item--active {
+  border-bottom: 2px solid $green;
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    color: $white;
+  }
+
+  .site-list__item--green-border {
+    border-bottom: 2px solid $white;
+  }
+}

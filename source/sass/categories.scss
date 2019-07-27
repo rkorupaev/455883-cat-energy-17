@@ -189,11 +189,26 @@
     align-self: flex-start;
   }
 
+  .categories__title {
+    margin-top: 82px;
+    margin-bottom: 74px;
+  }
+
+  .categories__text {
+    margin: 0;
+    margin-bottom: 36px;
+  }
+
   .categories__img-background {
     width: 100px;
     height: 100px;
-    top: 20%;
+    top: 15%;
     left: 15%;
+  }
+
+  .categories__img-background::before {
+    width: 100px;
+    height: 100px;
   }
 
   .categories__title {
@@ -208,5 +223,6 @@
     border: none;
     padding-left: 15%;
     margin: 0;
+    margin-bottom: 63px;
   }
 }

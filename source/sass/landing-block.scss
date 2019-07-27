@@ -90,11 +90,22 @@
 
 @media (min-width: $desktop-width) {
   .landing-block {
-    padding: 0 40px;
+    padding: 130px 40px 0 40px;
+    margin-bottom: 80px;
 
     background: linear-gradient(to bottom, $green 100%);
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 100% 0;
+    background-size: 650px 696px;
+  }
+
+  .landing-block__title,
+  .landing-block__slogan {
+    padding-left: 80px;
+  }
+
+  .landing-block__button {
+    margin-left: 80px;
   }
 }
