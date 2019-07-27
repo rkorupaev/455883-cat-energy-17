@@ -25,7 +25,9 @@
   flex-direction: column;
   align-items: center;
   min-height: 185px;
+  padding: 0 20px;
   margin-bottom: 24px;
+  border-top: 1px solid $border-catalog-top;
 }
 
 .catalog__wrapper {
@@ -97,8 +99,9 @@
   padding-bottom: 11px;
 }
 
-
 .catalog__showmore-text {
+  font-family: $side-text;
+  font-size: 12px;
   line-height: 16px;
   color: $text-black;
   margin: 0;
@@ -152,6 +155,7 @@
   .catalog {
     padding: 0 40px;
   }
+
   .catalog__item {
     min-width: 245px;
   }
