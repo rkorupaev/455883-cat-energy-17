@@ -32,3 +32,13 @@
     background-color: $white;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .stats-list__main-text {
+    width: 160px;
+  }
+
+  .stats-list__side-text {
+    width: 140px;
+  }
+}

@@ -96,7 +96,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .howitworks {
+    padding: 0 40px;
+  }
+
   .howitworks__item {
-    max-width: 245px;
+    max-width: 204px;
   }
 }
