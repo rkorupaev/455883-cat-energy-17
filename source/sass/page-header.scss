@@ -78,6 +78,9 @@
 @media (min-width: $desktop-width) {
   .page-header--desktop-position {
     position: absolute;
+  }
+
+  .page-header {
     width: $desktop-width - 80px;
     padding: 50px 3% 0 3%;
   }
