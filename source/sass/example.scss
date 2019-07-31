@@ -78,6 +78,7 @@
   .example {
     border-top: 1px solid $border-grey;
     background-color: $white;
+    background: linear-gradient(to top, $grey 70%, $white 30%);
   }
 
   .example__title {
@@ -109,10 +110,6 @@
     text-align: right;
     margin: 0;
   }
-
-  // .example__interactive {
-  //   background: linear-gradient(to top, $grey 50%, $white 50%);
-  // }
 }
 
 @media (min-width: $desktop-width) {

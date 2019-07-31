@@ -42,35 +42,36 @@
   display: block;
   width: 50px;
   height: 50px;
-  // background-color: $green;
+  background-color: $green;
   position: absolute;
   top: 26px;
   left: 20px;
-  // border-radius: 50%;
-}
-
-.categories__img-background::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color: $green;
   border-radius: 50%;
 }
 
-.categories__img-background--weight-loss {
+.categories__img-background--weight-loss::before {
+  content: "";
   background-image: url("../img/icon-cat-slim.svg");
   background-size: 35px 49px;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -2px;
 }
 
-.categories__img-background--gain-weight {
-  // content: "";
+.categories__img-background--gain-weight::before {
+  content: "";
   background-image: url("../img/icon-cat-pro.svg");
   background-size: 67px 28px;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  top: -2px;
+  left: -17px;
 }
 
 .categories__text {
