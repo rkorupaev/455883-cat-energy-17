@@ -1,0 +1,19 @@
+.social__item--vk {
+  padding-left: 73px;
+  padding-right: 37px;
+}
+
+.social__item--inst {
+  padding-right: 40px;
+}
+
+.social__item {
+  &:hover svg,
+  &:focus svg {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

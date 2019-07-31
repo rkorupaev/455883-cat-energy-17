@@ -1,43 +1,15 @@
-body {
-  min-width: 320px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
-@import "normalize.scss", "variables.scss", "page-header.scss", "landing-block.scss", "categories.scss", "howitworks.scss", "page-footer.scss", "catalog.scss", "example.scss";
-
-
-.body-container {
-  margin: 0 auto;
-  max-width: $mobile-width;
-}
-
-@media (min-width: $tablet-width) {
-  .body-container {
-    max-width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .body-container {
-    max-width: $desktop-width;
-  }
-}
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "page-header.scss";
+@import "landing-block.scss";
+@import "categories.scss";
+@import "howitworks.scss";
+@import "page-footer.scss";
+@import "catalog.scss";
+@import "example.scss";
+@import "social.scss";
+@import "copyright.scss";
+@import "stats-list.scss";
+@import "site-list.scss";

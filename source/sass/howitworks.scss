@@ -1,6 +1,5 @@
 .howitworks {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   margin-bottom: 40px;
 }
 
@@ -57,9 +56,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .howitworks {
+    padding: 0 30px;
+    margin-top: 35px;
+  }
+
+  .howitworks__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
   .howitworks__list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-around;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -70,6 +80,7 @@
     max-width: 324px;
     min-height: 228px;
     margin: 0;
+    padding-right: 101px;
 
     &::before {
       width: 80px;
@@ -80,11 +91,16 @@
 
   .howitworks__text {
     padding-top: 117px;
+    max-width: 245px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .howitworks {
+    padding: 0 40px;
+  }
+
   .howitworks__item {
-    max-width: 245px;
+    max-width: 204px;
   }
 }

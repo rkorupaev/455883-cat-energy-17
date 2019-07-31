@@ -25,19 +25,6 @@
   margin-top: 40px;
 }
 
-// .categories__item::before {
-//   content: "";
-//   display: block;
-//   width: 50px;
-//   height: 50px;
-//   background-color: $green;
-//   position: absolute;
-//   top: 25px;
-//   left: 20px;
-//   border-radius: 50%;
-
-// }
-
 .categories__img-background {
   display: block;
   width: 50px;
@@ -49,20 +36,29 @@
   border-radius: 50%;
 }
 
-.categories__item--weight-loss::before {
+.categories__img-background--weight-loss::before {
   content: "";
   background-image: url("../img/icon-cat-slim.svg");
   background-size: 35px 49px;
-  background-position: 10px 0;
+  background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -2px;
 }
 
-.categories__item--gain-weight::before {
+.categories__img-background--gain-weight::before {
   content: "";
   background-image: url("../img/icon-cat-pro.svg");
   background-size: 67px 28px;
-  background-position: -15px 10px;
+  background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  top: -2px;
+  left: -17px;
 }
 
 .categories__text {
@@ -75,30 +71,41 @@
 .categories__button {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  line-height: 16px;
   min-width: 240px;
   height: 57px;
   text-transform: uppercase;
   color: $black;
   margin-left: 20px;
   border-top: 1px solid $border-grey;
+
+  &:hover .categories__button-arrow,
+  &:focus .categories__button-arrow {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-size: 33px 11px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-// .categories__button:hover,
-// .categories__button:focus {
-
-// }
-
-.categories__button:active {
-  opacity: 0.3;
-}
-
-.categories__button img {
-  padding-left: 12px;
+.categories__button-arrow {
+  display: block;
+  width: 33px;
+  height: 11px;
+  margin-left: 22px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 11px;
 }
 
 @media (min-width: $tablet-width) {
   .categories {
     min-height: 775px;
+    padding: 0 30px;
   }
 
   .categories__item {
@@ -109,7 +116,28 @@
   .categories__title,
   .categories__text,
   .categories__button {
-    max-width: 390px;
+    max-width: 384px;
+    padding-left: 53px;
+  }
+
+  .categories__title {
+    font-size: 36px;
+    line-height: 37px;
+    margin-top: 52px;
+    margin-bottom: 25px;
+  }
+
+  .categories__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .categories__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    border: 0;
   }
 
   .categories__img-background {
@@ -118,6 +146,26 @@
     top: 20%;
     left: 65%;
   }
+
+  .categories__img-background::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .categories__img-background--weight-loss::before {
+    background-size: 140px 194px;
+    width: 200px;
+    height: 200px;
+    top: -14px;
+  }
+
+  .categories__img-background--gain-weight::before {
+    background-size: 268px 112px;
+    width: 270px;
+    height: 200px;
+    top: -2px;
+    left: -39px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -125,6 +173,7 @@
     flex-direction: row;
     justify-content: space-between;
     min-height: auto;
+    padding: 0 40px;
   }
 
   .categories__item {
@@ -140,28 +189,51 @@
   .categories__title,
   .categories__text,
   .categories__button {
-    max-width: 390px;
+    max-width: 465px;
     align-self: flex-start;
+  }
+
+  .categories__title {
+    margin-top: 82px;
+    margin-bottom: 74px;
+    align-self: center;
+  }
+
+  .categories__text {
+    margin: 0;
+    margin-bottom: 36px;
   }
 
   .categories__img-background {
     width: 100px;
     height: 100px;
-    top: 20%;
-    left: 15%;
+    top: 13%;
+    left: 10%;
   }
 
-  .categories__title {
-    align-self: center;
-  }
-
-  .categories__text {
-    padding-left: 15%;
+  .categories__img-background::before {
+    width: 100px;
+    height: 100px;
   }
 
   .categories__button {
     border: none;
-    padding-left: 15%;
     margin: 0;
+    margin-bottom: 63px;
+  }
+
+  .categories__img-background--weight-loss::before {
+    background-size: 70px 97px;
+    width: 100px;
+    height: 100px;
+    top: -6px;
+  }
+
+  .categories__img-background--gain-weight::before {
+    background-size: 134px 56px;
+    width: 140px;
+    height: 100px;
+    top: -2px;
+    left: -22px;
   }
 }

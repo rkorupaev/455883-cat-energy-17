@@ -4,19 +4,34 @@ $green: #68b738;
 $green-focused: #5eaa2f;
 $grey: #f2f2f2;
 $black: #111111;
-$border-grey: #d9d9d9;
+$border-grey: #e6e6e6;
 $text-black: #444444;
 $text-hover: #8fc46e;
 $button-hover-focus: #ebebeb;
 $button-text-active: #b9b9b9;
 $border-example-normal: #bebebe;
 $border-example-hover: #989898;
-
+$border-catalog-top: #ededed;
+$border-catalog-table: #cdcdcd;
 
 //font-family
+$font-primary: "Oswald", "Arial", sans-serif;
 $side-text: "Arial", sans-serif;
 
 //viewport width
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
+
+//service classes
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

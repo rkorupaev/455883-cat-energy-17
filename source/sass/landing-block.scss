@@ -58,6 +58,7 @@
   .landing-block {
     background: none;
     align-items: flex-start;
+    padding-left: 120px;
   }
 
   .landing-block__title {
@@ -70,6 +71,8 @@
 
   .landing-block__slogan {
     color: $black;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .landing-block__img {
@@ -79,16 +82,30 @@
 
   .landing-block__button {
     max-width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 6px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .landing-block {
-    padding: 0 40px;
+    padding: 130px 40px 0 40px;
+    margin-bottom: 80px;
 
     background: linear-gradient(to bottom, $green 100%);
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 100% 0;
+    background-size: 650px 696px;
+  }
+
+  .landing-block__title,
+  .landing-block__slogan {
+    padding-left: 80px;
+  }
+
+  .landing-block__button {
+    margin-left: 80px;
   }
 }
