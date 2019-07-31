@@ -27,7 +27,7 @@
   background-color: $grey;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .stats-list__side-text {
     background-color: $white;
   }
