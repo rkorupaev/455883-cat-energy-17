@@ -10,6 +10,10 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: 320px 305px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .landing-block__title {
@@ -98,6 +102,10 @@
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: 650px 696px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .landing-block__title,

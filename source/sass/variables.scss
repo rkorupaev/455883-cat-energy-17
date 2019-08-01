@@ -23,6 +23,10 @@ $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
 
+//retina stats
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 //service classes
 .visually-hidden {
   position: absolute !important;
