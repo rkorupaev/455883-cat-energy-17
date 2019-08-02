@@ -144,7 +144,7 @@
     padding: 0 30px;
   }
 
-  .catalog__title{
+  .catalog__title {
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 75px;
@@ -157,23 +157,26 @@
   }
 
   .catalog__item {
+    justify-content: flex-end;
+    min-height: 514px;
     min-width: 324px;
     border: none;
     padding: 0;
-    background-color: $grey;
+    background: linear-gradient(to top, $grey 81%, $white 19%);
   }
 
   .catalog__item:last-child {
+    background: none;
     background-color: $white;
-    border: 1px solid $border-grey;
 
     justify-content: flex-end;
   }
 
   .catalog__showmore-block {
-    min-height: 100%;
+    min-height: 415px;
     justify-content: flex-end;
     text-align: center;
+    border: 1px solid $border-grey;
     background-position: 50% 60px;
   }
 
