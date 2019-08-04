@@ -7,9 +7,14 @@
   margin-bottom: 22px;
 
   background: linear-gradient(to bottom, $green 100%);
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: 320px 305px;
-  background-repeat: no-repeat;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-size: 280px 270px, 320px 305px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 80%, 0 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .landing-block__title {
@@ -30,14 +35,13 @@
 }
 
 .landing-block__button {
-  display: flex;
   text-transform: uppercase;
   background-color: $green;
   width: calc(100% - 40px);
   min-height: 40px;
   color: $white;
-  align-items: center;
-  justify-content: center;
+  line-height: 40px;
+  margin-top: auto;
 }
 
 .button--green:hover,
@@ -56,9 +60,18 @@
 
 @media (min-width: $tablet-width) {
   .landing-block {
-    background: none;
     align-items: flex-start;
     padding-left: 120px;
+    min-height: 823px;
+
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-size: 709px 609px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+    }
   }
 
   .landing-block__title {
@@ -73,6 +86,7 @@
     color: $black;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 48px;
   }
 
   .landing-block__img {
@@ -83,8 +97,8 @@
   .landing-block__button {
     max-width: 245px;
     font-size: 20px;
-    line-height: 20px;
-    padding: 6px 0;
+    line-height: 52px;
+    margin: 0;
   }
 }
 
@@ -92,17 +106,31 @@
   .landing-block {
     padding: 130px 40px 0 40px;
     margin-bottom: 80px;
+    min-height: 558px;
 
     background: linear-gradient(to bottom, $green 100%);
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: 650px 696px;
+    background-position: 66% 80%, 100% 0;
+    background-size: 552px 499px, 650px 696px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .landing-block__title,
   .landing-block__slogan {
     padding-left: 80px;
+  }
+
+  .landing-block__title {
+    margin-top: 83px;
+    margin-bottom: 34px;
+  }
+
+  .landing-block__slogan {
+    margin-bottom: 53px;
   }
 
   .landing-block__button {

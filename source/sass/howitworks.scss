@@ -41,18 +41,38 @@
 
 .howitworks__item--healthy::before {
   background-image: url("../img/advantage-leaf@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 83%;
+  }
 }
 
 .howitworks__item--powder::before {
   background-image: url("../img/advantage-powder@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 83%;
+  }
 }
 
 .howitworks__item--functionalfood::before {
   background-image: url("../img/advantage-dining@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 83%;
+  }
 }
 
 .howitworks__item--changes::before {
   background-image: url("../img/advantage-clock@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 83%;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -69,7 +89,6 @@
 
   .howitworks__list {
     display: flex;
-    // justify-content: space-around;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
