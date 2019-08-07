@@ -3,6 +3,10 @@
   line-height: 16px;
   color: $text-black;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -13,8 +17,10 @@
 }
 
 .copyright__image {
-  &:hover path,
-  &:focus path {
+  fill: $icon-color;
+
+  &:hover,
+  &:focus {
     fill: $green;
   }
 
