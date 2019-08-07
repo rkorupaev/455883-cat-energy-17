@@ -8,6 +8,10 @@
 }
 
 .social__item {
+  & svg {
+    fill: $icon-color;
+  }
+
   &:hover svg,
   &:focus svg {
     fill: $green;
