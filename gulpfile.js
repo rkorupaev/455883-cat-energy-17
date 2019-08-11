@@ -15,6 +15,7 @@ var makeSprite = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var webp = require("gulp-webp");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("clean", function() {
   return del("build");
@@ -49,6 +50,7 @@ gulp.task("html", function() {
   .pipe(posthtml([
     include()
     ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 
