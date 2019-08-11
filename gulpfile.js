@@ -23,7 +23,7 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
       return gulp.src([
-          "source/fonts/**/*.{woff, woff2}",
+          "source/fonts/**/*.{woff,woff2}",
           "source/js/**",
           "source/img/**"
         ], {
@@ -78,7 +78,7 @@ gulp.task("css", function() {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-       autoprefixer()
+      autoprefixer()
     ]))
     .pipe(gulpcsso())
     .pipe(rename("style.min.css"))
@@ -108,8 +108,8 @@ gulp.task("refresh", function(done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css",
   "sprite",
+  "css",
   "html"
   ));
 gulp.task("start", gulp.series("build", "server"));
