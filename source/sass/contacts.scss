@@ -9,6 +9,10 @@
   display: flex;
   align-items: center;
   background-color: $white;
+
+  &--grey-background {
+    background-color: $grey;
+  }
 }
 
 .contacts__title {
