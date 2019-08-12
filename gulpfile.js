@@ -55,7 +55,7 @@ gulp.task("html", function() {
 });
 
 gulp.task("minImages", function() {
-  return gulp.src("source/img/**/*.{jpg, png, svg}")
+  return gulp.src("build/img/**/*.{jpg, png, svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimisationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
@@ -108,6 +108,8 @@ gulp.task("refresh", function(done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "minImages",
+  "createWebp",
   "sprite",
   "css",
   "html"
