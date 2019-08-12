@@ -15,6 +15,7 @@ var makeSprite = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var webp = require("gulp-webp");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("clean", function() {
   return del("build");
@@ -22,7 +23,7 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
       return gulp.src([
-          "source/fonts/**/*.{woff, woff2}",
+          "source/fonts/**/*.{woff,woff2}",
           "source/js/**",
           "source/img/**"
         ], {
@@ -36,7 +37,8 @@ gulp.task("sprite", function() {
     "source/img/**/icon-fb.svg",
     "source/img/**/icon-insta.svg",
     "source/img/**/icon-vk.svg",
-    "source/img/**/htmlacademy.svg"])
+    "source/img/**/htmlacademy.svg",
+    "source/img/**/icon-gift.svg"])
   .pipe(makeSprite({
     inlineSvg: true
   }))
@@ -49,11 +51,12 @@ gulp.task("html", function() {
   .pipe(posthtml([
     include()
     ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 });
 
 gulp.task("minImages", function() {
-  return gulp.src("source/img/**/*.{jpg, png, svg}")
+  return gulp.src("build/img/**/*.{jpg, png, svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimisationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
@@ -76,7 +79,7 @@ gulp.task("css", function() {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-       autoprefixer()
+      autoprefixer()
     ]))
     .pipe(gulpcsso())
     .pipe(rename("style.min.css"))
@@ -106,8 +109,10 @@ gulp.task("refresh", function(done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css",
+  "minImages",
+  "createWebp",
   "sprite",
+  "css",
   "html"
   ));
 gulp.task("start", gulp.series("build", "server"));
