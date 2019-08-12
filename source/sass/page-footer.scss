@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   background-color: $grey;
-  padding: 0 20px;
   padding-top: 39px;
 }
 
@@ -44,11 +43,12 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 30px;
+    flex-wrap: wrap;
   }
 
   .page-footer__image {
     padding: 0;
+    padding-left: 30px;
   }
 
   .page-footer__social {
@@ -59,11 +59,16 @@
   .page-footer__copyright {
     justify-content: flex-end;
     min-width: auto;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
-    padding: 0 40px;
+  .page-footer__image {
+    padding-left: 40px;
+  }
+
+  .page-footer__copyright {
+    padding-right: 40px;
   }
 }

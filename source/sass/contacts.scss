@@ -8,6 +8,7 @@
 
   display: flex;
   align-items: center;
+  background-color: $white;
 }
 
 .contacts__title {
@@ -45,6 +46,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     min-height: 596px;
+    width: 100%;
   }
 
   .contacts__wrapper {
