@@ -63,9 +63,9 @@
   text-align: right;
 }
 
-// .catalog__button {
-
-// }
+.catalog__button {
+  width: 100%;
+}
 
 .catalog__showmore-block {
   display: flex;
@@ -224,8 +224,9 @@
   }
 
   .catalog__button {
-    width: 76%;
+    width: 77%;
     margin-bottom: 40px;
+
   }
 }
 

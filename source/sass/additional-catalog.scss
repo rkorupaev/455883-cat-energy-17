@@ -50,11 +50,13 @@
 
 .additional-catalog__table {
   margin-bottom: 14px;
+  font-family: $side-text;
 }
 
 .additional-catalog__button {
   margin-top: auto;
   margin-bottom: 17px;
+  width: 100%;
 }
 
 .additional-catalog__price {
@@ -102,7 +104,7 @@
   .additional-catalog {
     min-height: 1084px;
     padding: 0 30px;
-    // margin-bottom: 35px;
+    margin: 0;
   }
 
   .additional-catalog__title {
@@ -132,12 +134,24 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-end;
+    min-height: 139px;
     padding: 0 37px;
   }
 
   .additional-catalog__item-title,
   .additional-catalog__table {
     width: 50%;
+    margin-top: 27px;
+  }
+
+  .additional-catalog__item-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-catalog__table {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-catalog__amount {
@@ -146,5 +160,30 @@
 
   .additional-catalog__price {
     width: 95px;
+  }
+
+  .additional-catalog__image {
+    height: 200px;
+    margin-top: 69px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+
+    & svg {
+      top: 50%;
+      left: 12%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .additional-catalog__image-text {
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    margin: 0;
+    text-align: left;
   }
 }
