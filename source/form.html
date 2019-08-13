@@ -36,45 +36,36 @@
         <p class="form__title-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <ul class="form__general-info info-list">
           <li class="info-list__item">
-            <label class="info-list__name">Имя:*
-              <input class="info-list__value" type="text" placeholder="БАРСИК"></input>
-            </label>
+            <label class="info-list__name" for="name">Имя:*</label>
+            <input class="info-list__value" id="name" type="text" placeholder="БАРСИК"></input>
           </li>
           <li class="info-list__item">
-            <label class="info-list__weight">Вес (кг):*
-              <input class="info-list__value" type="text" placeholder="7"></input>
-            </label>
+            <label class="info-list__name" for="weight">Вес (кг):*</label>
+            <input class="info-list__value" id="weight" type="text" placeholder="7"></input>
           </li>
           <li class="info-list__item">
-            <label class="info-list__age">Вес (кг):*
-              <input class="info-list__value" type="text" placeholder="7"></input>
-            </label>
+            <label class="info-list__name" for="age">Возраст (лет):</label>
+            <input class="info-list__value" id="age" type="text" placeholder="7"></input>
           </li>
         </ul>
-        <ul class="form__type type-list">
-          <li class="type-list__item">
-            <label class="type-list__name">
-              <input class="type-list__value" type="checkbox">Похудение</input>
-            </label>
-          </li>
-          <li class="type-list__item">
-            <label class="type-list__name">
-              <input class="type-list__value" type="checkbox">Набор массы</input>
-            </label>
-          </li>
-          <li class="type-list__item">
-            <label class="type-list__name">
-              <input class="type-list__value" type="checkbox">Не знаю (Нужен ваш совет)</input>
-            </label>
-          </li>
-        </ul>
-        <h3 class="form__contacts-title">Контактные данные(владельца кота)</h3>
+        <div class="form__type type-list">
+          <label class="type-list__name">
+            <input class="type-list__value" type="radio" name="type">Похудение</input><span></span>
+          </label>
+          <label class="type-list__name">
+            <input class="type-list__value" type="radio" name="type">Набор массы</input><span></span>
+          </label>
+          <label class="type-list__name">
+            <input class="type-list__value" type="radio" name="type">Не знаю (Нужен ваш совет)</input><span></span>
+          </label>
+        </div>
+        <h3 class="form__contacts-title">Контактные данные (владельца кота)</h3>
         <ul class="form__contacts contacts-list">
           <li class="contacts-list__item">E-mail:*
-            <input class="contacts-list__value" placeholder="kuklachev@gmail.com"></input>
+            <input class="contacts-list__value" type="email" placeholder="kuklachev@gmail.com"></input><span></span>
           </li>
           <li class="contacts-list__item">Телефон:*
-            <input class="contacts-list__value" placeholder="8 (960) 900-60-90"></input>
+            <input class="contacts-list__value" type="tel" placeholder="8 (960) 900-60-90"></input><span></span>
           </li>
         </ul>
         <h3 class="form__comment-title">Комментарий</h3>

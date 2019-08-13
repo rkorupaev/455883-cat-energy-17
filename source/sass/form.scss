@@ -1,0 +1,94 @@
+.form {
+  min-height: 1358px;
+}
+
+.form__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  padding: 0 20px;
+  margin: 30px 0 36px 0;
+}
+
+.form__title-text {
+  padding: 0 20px;
+  width: 228px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.form__contacts-title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 30px 20px;
+  margin: 0;
+
+  border-top: 1px solid $border-catalog-top;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 99px;
+    height: 3px;
+    right: 0;
+    top: 39%;
+    background-color: $green;
+  }
+}
+
+.form__comment-title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 158px;
+    height: 3px;
+    right: 0;
+    top: 25%;
+    background-color: $green;
+  }
+}
+
+.form__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  resize: none;
+
+  height: 150px;
+  width: 250px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.form__additional-title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 20px;
+  padding-bottom: 32px;
+  margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 136px;
+    height: 3px;
+    right: 0;
+    top: 25%;
+    background-color: $green;
+  }
+}
