@@ -30,6 +30,81 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <form class="form">
+        <h2 class="form__title">Подбор программы</h2>
+        <p class="form__title-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <ul class="form__general-info info-list">
+          <li class="info-list__item">
+            <label class="info-list__name">Имя:*
+              <input class="info-list__value" type="text" placeholder="БАРСИК"></input>
+            </label>
+          </li>
+          <li class="info-list__item">
+            <label class="info-list__weight">Вес (кг):*
+              <input class="info-list__value" type="text" placeholder="7"></input>
+            </label>
+          </li>
+          <li class="info-list__item">
+            <label class="info-list__age">Вес (кг):*
+              <input class="info-list__value" type="text" placeholder="7"></input>
+            </label>
+          </li>
+        </ul>
+        <ul class="form__type type-list">
+          <li class="type-list__item">
+            <label class="type-list__name">
+              <input class="type-list__value" type="checkbox">Похудение</input>
+            </label>
+          </li>
+          <li class="type-list__item">
+            <label class="type-list__name">
+              <input class="type-list__value" type="checkbox">Набор массы</input>
+            </label>
+          </li>
+          <li class="type-list__item">
+            <label class="type-list__name">
+              <input class="type-list__value" type="checkbox">Не знаю (Нужен ваш совет)</input>
+            </label>
+          </li>
+        </ul>
+        <h3 class="form__contacts-title">Контактные данные(владельца кота)</h3>
+        <ul class="form__contacts contacts-list">
+          <li class="contacts-list__item">E-mail:*
+            <input class="contacts-list__value" placeholder="kuklachev@gmail.com"></input>
+          </li>
+          <li class="contacts-list__item">Телефон:*
+            <input class="contacts-list__value" placeholder="8 (960) 900-60-90"></input>
+          </li>
+        </ul>
+        <h3 class="form__comment-title">Комментарий</h3>
+        <textarea class="form__textarea">Расскажите обо всех повадках кота</textarea>
+        <h3 class="form__additional-title">Дополнительно</h3>
+        <ul class="form__additional-list additional-list">
+          <li class="additional-list__item">
+            <label class="additonal-list__name">
+              <input type="checkbox" class="additional-list__value">Сахарозаменитель</input>
+            </label>
+          </li>
+          <li class="additional-list__item">
+            <label class="additonal-list__name">
+              <input type="checkbox" class="additional-list__value">Питьевая вода</input>
+            </label>
+          </li>
+          <li class="additional-list__item">
+            <label class="additonal-list__name">
+              <input type="checkbox" class="additional-list__value">Молоко</input>
+            </label>
+          </li>
+          <li class="additional-list__item">
+            <label class="additonal-list__name">
+              <input type="checkbox" class="additional-list__value">Витамины</input>
+            </label>
+          </li>
+        </ul>
+        <a class="form__button button button--green" href="#">Заказать</a>
+      </form>
+    </main>
     <footer class="page-footer">
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -38,7 +113,7 @@
               Санкт-Петербург</span></p>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.30189321705!2d30.32195305844512!3d59.938716495469045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1565366283024!5m2!1sen!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.30189321705!2d30.32195305844512!3d59.938716495469045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1565366283024!5m2!1sen!2sru" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
       <img class="page-footer__image" src="img/logo-footer.svg" alt="CAR ENERGY" width="128" height="24">
@@ -50,12 +125,12 @@
             </svg></a>
         </li>
         <li class="social__item social__item--inst">
-          <a class="social__link" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 16.1 16;" xml:space="preserve" width="16" height="16">
+          <a class="social__link" href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 16.1 16;" xml:space="preserve" width="16" height="16">
               <use xlink:href="#icon-insta"></use>
             </svg></a>
         </li>
         <li class="social__item social__item--fb">
-          <a class="social__link" href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 10 19;" xml:space="preserve" width="10" height="16">
+          <a class="social__link" href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 10 19;" xml:space="preserve" width="10" height="16">
               <use xlink:href="#icon-fb"></use>
             </svg></a>
         </li>
