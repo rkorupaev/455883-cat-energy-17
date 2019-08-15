@@ -2,7 +2,43 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 156px;
   padding: 0 20px;
+  padding-bottom: 34px;
   margin: 0;
 }
+
+.additional-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 46px;
+}
+
+.additonal-list__name span {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  border: 1px solid $radio-color;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   width: 30px;
+  //   height: 30px;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: red;
+  // }
+}
+
+.additonal-list__name:checked+span
