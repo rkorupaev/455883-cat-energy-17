@@ -27,18 +27,36 @@
     left: 0;
     top: -6px;
   }
+
+  &:hover span,
+  &:focus span {
+    border: 1px solid $radio-color-hover;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &:hover .type-list__value:checked+span::before,
+  &:focus .type-list__value:checked+span::before {
+    border: 1px solid $radio-color-hover;
+  }
+
+  &:active .type-list__value:checked+span::before {
+    opacity: 0.3;
+  }
 }
 
-.type-list__value:checked + span {
+.type-list__value:checked+span {
   display: block;
   position: absolute;
   width: 12px;
   height: 12px;
-  border: 1px solid $radio-color;
+  border: none;
   background-color: $green;
   border-radius: 50%;
-  left: 9px;
-  top: 3px;
+  left: 10px;
+  top: 4px;
 
   &::before {
     content: "";

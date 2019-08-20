@@ -31,4 +31,24 @@
   width: 100%;
   padding-left: 15px;
   margin-left: 10px;
+  border: 1px solid $border-grey;
+
+  &:hover {
+    border: 1px solid $border-catalog-table;
+  }
+
+  &:focus {
+    border: 1px solid $border-catalog-table;
+    outline: none;
+  }
+
+  &:active {
+    border: 2px solid $text-black;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid $error-color;
+    outline: none;
+  }
 }

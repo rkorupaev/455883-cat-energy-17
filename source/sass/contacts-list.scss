@@ -27,14 +27,8 @@
     right: 16px;
   }
 
-  &:first-child span {
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-mail.svg");
-  }
-
-  &:last-child span {
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-phone.svg");
+  &:active svg {
+    fill: $green;
   }
 }
 
@@ -45,4 +39,29 @@
   margin-left: 10px;
   font-size: 16px;
   line-height: 18px;
+  border: 1px solid $border-grey;
+
+  &:hover {
+    border: 1px solid $border-catalog-table;
+  }
+
+  &:focus {
+    border: 1px solid $border-catalog-table;
+    outline: none;
+  }
+
+  &:active {
+    border: 2px solid $text-black;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid $error-color;
+    outline: none;
+  }
+
+  &:invalid + .contacts-list__image svg {
+    fill: $error-color;
+  }
 }
+

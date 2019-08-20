@@ -20,6 +20,26 @@
   padding-left: 46px;
 }
 
+.additonal-list__name {
+  &:hover span,
+  &:focus span {
+    border: 1px solid $radio-color-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .additional-list__value:checked + span,
+  &:focus .additional-list__value:checked + span {
+    border: 1px solid $radio-color-hover;
+  }
+
+  &:active .additional-list__value:checked {
+    opacity: 0.3;
+  }
+}
+
 .additonal-list__name span {
   position: absolute;
   display: block;
@@ -34,7 +54,7 @@
   display: none;
 }
 
-.additional-list__value:checked + span {
+.additional-list__value:checked+span {
   position: absolute;
   display: block;
   width: 30px;

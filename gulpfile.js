@@ -38,7 +38,9 @@ gulp.task("sprite", function() {
     "source/img/**/icon-insta.svg",
     "source/img/**/icon-vk.svg",
     "source/img/**/htmlacademy.svg",
-    "source/img/**/icon-gift.svg"])
+    "source/img/**/icon-gift.svg",
+    "source/img/**/icon-phone.svg",
+    "source/img/**/icon-mail.svg"])
   .pipe(makeSprite({
     inlineSvg: true
   }))
