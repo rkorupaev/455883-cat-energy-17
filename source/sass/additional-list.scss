@@ -74,5 +74,20 @@
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
   }
+}
 
+@media (min-width: $tablet-width) {
+  .additional-list {
+    padding: 0 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 110px;
+    padding-bottom: 54px;
+  }
+
+  .additional-list__item {
+    width: 36%;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

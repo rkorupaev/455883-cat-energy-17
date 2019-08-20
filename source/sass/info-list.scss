@@ -11,6 +11,7 @@
 }
 
 .info-list__item {
+  text-transform: uppercase;
   min-height: 45px;
   display: flex;
   align-items: center;
@@ -50,5 +51,13 @@
   &:invalid {
     border: 2px solid $error-color;
     outline: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .info-list {
+    padding: 0 70px;
+    margin-bottom: 72px;
+    border: none;
   }
 }

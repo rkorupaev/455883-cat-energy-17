@@ -11,6 +11,7 @@
 }
 
 .form__title-text {
+  text-transform: uppercase;
   padding: 0 20px;
   width: 228px;
   margin: 0;
@@ -61,8 +62,10 @@
 }
 
 .form__textarea {
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  color: $text-black;
   resize: none;
 
   height: 150px;
@@ -111,4 +114,136 @@
   font-family: $side-text;
   margin-top: 24px;
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+  }
+
+  .form__title-text {
+    padding-left: 70px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 325px;
+    margin-bottom: 69px;
+  }
+
+  .form__contacts-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 70px;
+    border: none;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 145px;
+      height: 3px;
+      right: 0;
+      top: 51%;
+      background-color: $green;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      left: 0;
+      top: 51%;
+      background-color: $green;
+    }
+  }
+
+  .form__comment-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 70px;
+    padding-bottom: 71px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 479px;
+      height: 3px;
+      right: 0;
+      top: 19%;
+      background-color: $green;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      left: 0;
+      top: 19%;
+      background-color: $green;
+    }
+  }
+
+  .form__textarea {
+    margin: 0 70px;
+    margin-bottom: 69px;
+    width: 630px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__additional-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 70px;
+    padding-bottom: 53px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 446px;
+      height: 3px;
+      right: 0;
+      top: 19%;
+      background-color: $green;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      left: 0;
+      top: 19%;
+      background-color: $green;
+    }
+  }
+
+  .form__button-block {
+    flex-direction: row;
+    padding: 0 70px;
+    min-height: 52px;
+    margin-bottom: 72px;
+  }
+
+  .form__button {
+    width: 283px;
+    min-height: 52px;
+    margin-right: 60px;
+    font-size: 20px;
+    line-height: 52px;
+  }
+
+  .form__required-text {
+    font-size: 16px;
+    line-height: 52px;
+    margin: 0;
+  }
 }

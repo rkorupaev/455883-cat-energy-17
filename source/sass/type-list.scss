@@ -70,3 +70,12 @@
     top: -10px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .type-list {
+    padding: 37px 27px;
+    margin: 0 70px;
+    min-height: 122px;
+    border: 1px solid $border-grey;
+  }
+}
