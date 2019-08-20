@@ -29,7 +29,7 @@
   }
 }
 
-.type-list__value:checked+span {
+.type-list__value:checked + span {
   display: block;
   position: absolute;
   width: 12px;

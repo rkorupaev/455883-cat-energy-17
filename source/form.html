@@ -50,7 +50,7 @@
         </ul>
         <div class="form__type type-list">
           <label class="type-list__name">
-            <input class="type-list__value" type="radio" name="type">Похудение</input><span></span>
+            <input class="type-list__value" type="radio" name="type" checked>Похудение</input><span></span>
           </label>
           <label class="type-list__name">
             <input class="type-list__value" type="radio" name="type">Набор массы</input><span></span>
@@ -93,12 +93,15 @@
             </label>
           </li>
         </ul>
-        <a class="form__button button button--green" href="#">Заказать</a>
+        <div class="form__button-block">
+          <a class="form__button button button--green" href="#">Заказать</a>
+          <p class="form__required-text">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--grey-background">
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8<span>
               Санкт-Петербург</span></p>

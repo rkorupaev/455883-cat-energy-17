@@ -28,17 +28,31 @@
   top: 0;
   left: 0;
   border: 1px solid $radio-color;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   display: block;
-  //   width: 30px;
-  //   height: 30px;
-  //   top: 0;
-  //   left: 0;
-  //   background-color: red;
-  // }
 }
 
-.additonal-list__name:checked+span
+.additional-list__value {
+  display: none;
+}
+
+.additional-list__value:checked + span {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  border: 1px solid $radio-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 21px;
+    height: 16px;
+    top: 7px;
+    left: 5px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+
+}
