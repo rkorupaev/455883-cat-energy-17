@@ -60,4 +60,20 @@
     margin-bottom: 72px;
     border: none;
   }
+
+  .info-list__name,
+  .info-list__value {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info-list {
+    padding-left: 40px;
+    padding-right: 80px;
+    width: 570px;
+    min-height: 196px;
+    margin: 0;
+  }
 }

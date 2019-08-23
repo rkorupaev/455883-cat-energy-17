@@ -34,30 +34,32 @@
       <form class="form">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__title-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <ul class="form__general-info info-list">
-          <li class="info-list__item">
-            <label class="info-list__name" for="name">Имя:*</label>
-            <input class="info-list__value" id="name" type="text" placeholder="БАРСИК"></input>
-          </li>
-          <li class="info-list__item">
-            <label class="info-list__name" for="weight">Вес (кг):*</label>
-            <input class="info-list__value" id="weight" type="number" placeholder="7"></input>
-          </li>
-          <li class="info-list__item">
-            <label class="info-list__name" for="age">Возраст (лет):</label>
-            <input class="info-list__value" id="age" type="number" placeholder="7"></input>
-          </li>
-        </ul>
-        <div class="form__type type-list">
-          <label class="type-list__name">
-            <input class="type-list__value" type="radio" name="type" checked>Похудение</input><span></span>
-          </label>
-          <label class="type-list__name">
-            <input class="type-list__value" type="radio" name="type">Набор массы</input><span></span>
-          </label>
-          <label class="type-list__name">
-            <input class="type-list__value" type="radio" name="type">Не знаю (Нужен ваш совет)</input><span></span>
-          </label>
+        <div class="form__lists-wrapper">
+          <ul class="form__general-info info-list">
+            <li class="info-list__item">
+              <label class="info-list__name" for="name">Имя:*</label>
+              <input class="info-list__value" id="name" type="text" placeholder="БАРСИК"></input>
+            </li>
+            <li class="info-list__item">
+              <label class="info-list__name" for="weight">Вес (кг):*</label>
+              <input class="info-list__value" id="weight" type="number" placeholder="7"></input>
+            </li>
+            <li class="info-list__item">
+              <label class="info-list__name" for="age">Возраст (лет):</label>
+              <input class="info-list__value" id="age" type="number" placeholder="7"></input>
+            </li>
+          </ul>
+          <div class="form__type type-list">
+            <label class="type-list__name">
+              <input class="type-list__value" type="radio" name="type" checked>Похудение</input><span></span>
+            </label>
+            <label class="type-list__name">
+              <input class="type-list__value" type="radio" name="type">Набор массы</input><span></span>
+            </label>
+            <label class="type-list__name">
+              <input class="type-list__value" type="radio" name="type">Не знаю (Нужен ваш совет)</input><span></span>
+            </label>
+          </div>
         </div>
         <h3 class="form__contacts-title">Контактные данные (владельца кота)</h3>
         <ul class="form__contacts contacts-list">

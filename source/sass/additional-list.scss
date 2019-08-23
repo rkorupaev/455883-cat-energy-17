@@ -91,3 +91,15 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-list {
+    padding: 0 40px;
+    min-height: auto;
+    padding-bottom: 61px;
+  }
+
+  .additional-list__item {
+    width: 18.8%;
+  }
+}

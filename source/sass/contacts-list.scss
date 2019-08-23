@@ -75,6 +75,22 @@
   }
 
   .contacts-list__item {
+    font-size: 20px;
+    line-height: 20px;
     min-height: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-list {
+    min-height: auto;
+    flex-direction: row;
+    padding: 0 40px;
+    padding-bottom: 70px;
+  }
+
+  .contacts-list__item {
+    width: 570px;
+  }
+}
+

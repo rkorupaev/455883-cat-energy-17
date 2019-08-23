@@ -78,4 +78,17 @@
     min-height: 122px;
     border: 1px solid $border-grey;
   }
+
+  .type-list__name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type-list {
+    padding: 37px 27px;
+    margin: 0;
+    width: 514px;
+  }
 }
