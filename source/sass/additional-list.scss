@@ -54,7 +54,7 @@
   display: none;
 }
 
-.additional-list__value:checked+span {
+.additional-list__value:checked + span {
   position: absolute;
   display: block;
   width: 30px;

@@ -38,26 +38,26 @@
           <ul class="form__general-info info-list">
             <li class="info-list__item">
               <label class="info-list__name" for="name">Имя:*</label>
-              <input class="info-list__value" id="name" type="text" placeholder="БАРСИК"></input>
+              <input class="info-list__value" id="name" type="text" placeholder="БАРСИК">
             </li>
             <li class="info-list__item">
               <label class="info-list__name" for="weight">Вес (кг):*</label>
-              <input class="info-list__value" id="weight" type="number" placeholder="7"></input>
+              <input class="info-list__value" id="weight" type="number" placeholder="7">
             </li>
             <li class="info-list__item">
               <label class="info-list__name" for="age">Возраст (лет):</label>
-              <input class="info-list__value" id="age" type="number" placeholder="7"></input>
+              <input class="info-list__value" id="age" type="number" placeholder="7">
             </li>
           </ul>
           <div class="form__type type-list">
             <label class="type-list__name">
-              <input class="type-list__value" type="radio" name="type" checked>Похудение</input><span></span>
+              <input class="type-list__value" type="radio" name="type" checked>Похудение<span></span>
             </label>
             <label class="type-list__name">
-              <input class="type-list__value" type="radio" name="type">Набор массы</input><span></span>
+              <input class="type-list__value" type="radio" name="type">Набор массы<span></span>
             </label>
             <label class="type-list__name">
-              <input class="type-list__value" type="radio" name="type">Не знаю (Нужен ваш совет)</input><span></span>
+              <input class="type-list__value" type="radio" name="type">Не знаю (Нужен ваш совет)<span></span>
             </label>
           </div>
         </div>
@@ -65,15 +65,15 @@
         <ul class="form__contacts contacts-list">
           <li class="contacts-list__item">
             <label class="contacts-list__name" for="email">E-mail:*</label>
-            <input class="contacts-list__value" type="email" placeholder="kuklachev@gmail.com" id="email"></input>
-            <span class="contacts-list__image"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+            <input class="contacts-list__value" type="email" placeholder="kuklachev@gmail.com" id="email">
+            <span class="contacts-list__image"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
                 <use xlink:href="#icon-mail"></use>
               </svg></span>
           </li>
           <li class="contacts-list__item">
             <label class="contacts-list__name" for="tel">Телефон:*</label>
-            <input class="contacts-list__value" type="tel" placeholder="8 (960) 900-60-90" id="tel"></input>
-            <span class="contacts-list__image"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+            <input class="contacts-list__value" type="tel" placeholder="8 (960) 900-60-90" id="tel" pattern="8[(][0-9]{3}[)]\s[0-9]{3}[-][0-9]{2}[-][0-9]{2}">
+            <span class="contacts-list__image"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
                 <use xlink:href="#icon-phone"></use>
               </svg></span>
           </li>
@@ -84,27 +84,27 @@
         <ul class="form__additional-list additional-list">
           <li class="additional-list__item">
             <label class="additonal-list__name" for="sugarfree">
-              <input type="checkbox" class="additional-list__value" id="sugarfree"></input><span></span>Сахарозаменитель
+              <input type="checkbox" class="additional-list__value" id="sugarfree"><span></span>Сахарозаменитель
             </label>
           </li>
           <li class="additional-list__item">
             <label class="additonal-list__name" for="water">
-              <input type="checkbox" class="additional-list__value" id="water"></input><span></span>Питьевая вода
+              <input type="checkbox" class="additional-list__value" id="water"><span></span>Питьевая вода
             </label>
           </li>
           <li class="additional-list__item">
             <label class="additonal-list__name" for="milk">
-              <input type="checkbox" class="additional-list__value" id="milk"></input><span></span>Молоко
+              <input type="checkbox" class="additional-list__value" id="milk"><span></span>Молоко
             </label>
           </li>
           <li class="additional-list__item">
             <label class="additonal-list__name" for="vitamins">
-              <input type="checkbox" class="additional-list__value" id="vitamins"></input><span></span>Витамины
+              <input type="checkbox" class="additional-list__value" id="vitamins"><span></span>Витамины
             </label>
           </li>
         </ul>
         <div class="form__button-block">
-          <a class="form__button button button--green" href="#">Заказать</a>
+          <button class="form__button button button--green" type="submit">Заказать</button>
           <p class="form__required-text">* — Обязательные поля</p>
         </div>
       </form>
