@@ -29,6 +29,7 @@
 }
 
 .landing-block__title {
+  width: 280px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -52,7 +53,7 @@
   min-height: 40px;
   color: $white;
   line-height: 40px;
-  margin-top: auto;
+  margin-top: 300px;
 }
 
 .button--green:hover,
@@ -91,6 +92,7 @@
 
   .landing-block__title {
     color: $black;
+    width: auto;
     max-width: 427px;
     font-size: 60px;
     line-height: 60px;

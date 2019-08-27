@@ -10,6 +10,7 @@
   font-weight: 400;
   height: 47px;
   margin: 0;
+  padding: 0 20px;
   padding-top: 32px;
   padding-bottom: 24px;
 }
@@ -88,7 +89,7 @@
   line-height: 20px;
 
   margin: 0;
-  padding-top: 84px;
+  padding-top: 150px;
   padding-bottom: 11px;
 }
 
@@ -214,6 +215,7 @@
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 32px;
+    min-width: 250px;
   }
 
   .catalog__characteristics tr {
@@ -238,5 +240,9 @@
 
   .catalog__item {
     min-width: 245px;
+  }
+
+  .catalog__characteristics {
+    min-width: 186px;
   }
 }

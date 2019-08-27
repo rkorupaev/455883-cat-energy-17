@@ -23,6 +23,7 @@
   font-family: $side-text;
   margin: 0;
   width: 86px;
+  left: 20px;
   top: 63px;
   background-color: $grey;
 }
@@ -40,5 +41,6 @@
 
   .stats-list__side-text {
     width: 140px;
+    left: 12px;
   }
 }

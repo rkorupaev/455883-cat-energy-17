@@ -237,12 +237,22 @@
     margin: 0;
   }
 
+  .additional-catalog__item-title {
+    width: 245px;
+    padding-right: 80px;
+  }
+
+  .additional-catalog__table {
+    max-width: 351px;
+  }
+
   .additional-catalog__amount,
   .additional-catalog__price {
     text-align: left;
   }
 
   .additional-catalog__button {
+    flex-shrink: 0;
     width: 245px;
   }
 
