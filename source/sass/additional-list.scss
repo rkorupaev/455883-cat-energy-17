@@ -2,7 +2,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 156px;
   padding: 0 20px;
   padding-bottom: 34px;
@@ -18,6 +17,10 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 46px;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
 }
 
 .additonal-list__name {
@@ -101,5 +104,9 @@
 
   .additional-list__item {
     width: 18.8%;
+
+    &:not(:last-child) {
+      margin-right: 39px;
+    }
   }
 }

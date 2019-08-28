@@ -1,7 +1,6 @@
 .type-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 106px;
   padding: 26px 20px;
 }
@@ -16,6 +15,10 @@
   font-size: 16px;
   line-height: 18px;
   padding-left: 46px;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
 
   & span {
     display: block;
