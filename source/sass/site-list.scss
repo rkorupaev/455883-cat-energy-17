@@ -23,7 +23,7 @@
   }
 }
 
-.site-list__item--active {
+.site-list__item--active a {
   border-bottom: 2px solid $green;
 }
 
@@ -32,7 +32,7 @@
     color: $white;
   }
 
-  .site-list__item--green-border {
+  .site-list__item--green-border a {
     border-bottom: 2px solid $white;
   }
 }
