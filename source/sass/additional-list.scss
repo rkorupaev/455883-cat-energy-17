@@ -23,7 +23,7 @@
   }
 }
 
-.additonal-list__name {
+.additional-list__name {
   &:hover span,
   &:focus span {
     border: 1px solid $radio-color-hover;
@@ -43,7 +43,7 @@
   }
 }
 
-.additonal-list__name span {
+.additional-list__name span {
   position: absolute;
   display: block;
   width: 30px;

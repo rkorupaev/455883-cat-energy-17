@@ -10,8 +10,8 @@
   line-height: 24px;
   text-transform: uppercase;
   width: 124px;
-  height: 56px;
-  padding-top: 16px;
+  height: 38px;
+  padding-top: 15px;
   margin: 0;
   margin-bottom: 8px;
   border: 1px solid #cdcdcd;
@@ -21,10 +21,12 @@
 .stats-list__side-text {
   position: absolute;
   font-family: $side-text;
+  font-size: 12px;
+  line-height: 12px;
   margin: 0;
-  width: 86px;
+  width: 82px;
   left: 20px;
-  top: 63px;
+  top: 47px;
   background-color: $grey;
 }
 
