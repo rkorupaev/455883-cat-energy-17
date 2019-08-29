@@ -38,11 +38,19 @@
     position: static;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 480px;
+    font-size: 18px;
+    min-width: 440px;
     border: 0;
   }
 
   .main-nav__toggler {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    font-size: 20px;
+    min-width: 478px;
   }
 }

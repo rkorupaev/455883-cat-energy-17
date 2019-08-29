@@ -12,6 +12,7 @@
 .page-header__logo {
   height: 70px;
   padding-top: 13px;
+  width: 191px;
 
   &:hover,
   &:focus {
@@ -33,6 +34,8 @@
 
   .page-header__logo {
     padding: 0;
+    padding-top: 4px;
+    width: 174px;
   }
 }
 
@@ -45,6 +48,10 @@
   .page-header {
     width: $desktop-width - 80px;
     margin-top: 50px;
-    padding: 0 3%;
+    padding: 0 40px;
+  }
+
+  .page-header__logo {
+    width: 202px;
   }
 }
