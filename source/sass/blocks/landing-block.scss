@@ -108,19 +108,21 @@
     font-size: 20px;
     line-height: 52px;
     margin: 0;
+    min-height: 52px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .landing-block {
-    padding: 130px 40px 0 40px;
+    padding: 130px 7.6% 0 7.6%;
     margin-bottom: 80px;
-    min-height: 558px;
+    min-height: 565px;
 
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 66% 80%, 100% 0;
-    background-size: 552px 499px, 650px 696px;
+    background-position: 64% 75%, 100% 0;
+    background-size: 552px 499px, 50% 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
@@ -144,8 +146,8 @@
   }
 
   .landing-block__title {
-    margin-top: 83px;
-    margin-bottom: 34px;
+    margin-top: 91px;
+    margin-bottom: 41px;
   }
 
   .landing-block__slogan {

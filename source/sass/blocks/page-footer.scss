@@ -54,6 +54,8 @@
   .page-footer__social {
     border: none;
     min-width: auto;
+    padding-top: 67px;
+    padding-bottom: 64px;
   }
 
   .page-footer__copyright {
@@ -65,10 +67,10 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__image {
-    padding-left: 40px;
+    padding-left: 7.6%;
   }
 
   .page-footer__copyright {
-    padding-right: 40px;
+    padding-right: 7.6%;
   }
 }

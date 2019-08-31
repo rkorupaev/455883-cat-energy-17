@@ -127,8 +127,9 @@
 @media (min-width: $tablet-width) {
   .example {
     padding: 0 30px;
+    min-height: 1082px;
     border-top: 1px solid $border-grey;
-    background: linear-gradient(to bottom, $white 58%, $grey 42%);
+    background: linear-gradient(to bottom, $white 57%, $grey 41%);
   }
 
   .example__title {
@@ -248,17 +249,18 @@
   .example {
     flex-direction: row;
     border: none;
-    padding: 0 40px;
-    background: linear-gradient(to top, $grey 68%, $white 32%);
+    padding: 0 7.6%;
+    background: linear-gradient(to top, $grey 72%, $white 28%);
+    min-height: auto;
   }
 
   .example__title {
-    padding-bottom: 142px;
+    padding-bottom: 145px;
   }
 
   .example__text {
     width: 434px;
-    margin-bottom: 72px;
+    margin-bottom: 69px;
   }
 
   .example__text-container {
@@ -275,22 +277,25 @@
 
   .example__expenses {
     max-width: none;
-    text-align: center;
+    text-align: left;
+
+    & span {
+      padding-left: 60px;
+    }
   }
 
   .example__wrapper {
-    margin-bottom: 62px;
+    margin-bottom: 49px;
   }
 
   .example__interactive {
-    width: 50%;
+    min-height: 640px;
   }
 
   .example__interactive--before {
     background-image: url("../img/before-desktop@1x.png");
     background-repeat: no-repeat;
-    background-size: 100% 499px;
-    background-position: 50% 50%;
+    background-position: -33% -7%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-desktop@2x.png");
@@ -306,5 +311,22 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-desktop@2x.png");
     }
+  }
+
+  .example__slider {
+    margin-bottom: 75px;
+  }
+
+  .example__before {
+    margin-left: 80px;
+    margin-right: 25px;
+  }
+
+  .example__after {
+    margin-left: 20px;
+  }
+
+  .example__slider-cursor {
+    left: 46%;
   }
 }
