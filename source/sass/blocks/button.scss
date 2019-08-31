@@ -10,3 +10,12 @@
   border: none;
   outline: none;
 }
+
+.button--green:hover,
+.button--green:focus {
+  background-color: $green-focused;
+}
+
+.button--green:active {
+  color: $text-hover;
+}
