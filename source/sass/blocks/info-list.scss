@@ -31,6 +31,7 @@
 }
 
 .info-list__value {
+  -moz-appearance: textfield;
   height: 39px;
   width: 100%;
   padding-left: 15px;
@@ -39,11 +40,13 @@
 
   &:hover {
     border: 1px solid $border-catalog-table;
+    -moz-appearance: number-input;
   }
 
   &:focus {
     border: 1px solid $border-catalog-table;
     outline: none;
+    -moz-appearance: number-input;
   }
 
   &:active {
