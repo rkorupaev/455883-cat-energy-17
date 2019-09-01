@@ -1,12 +1,5 @@
 .landing-block {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-height: 480px;
-  margin-bottom: 22px;
-
 
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-size: 280px 270px, 320px 305px;
@@ -28,6 +21,15 @@
     min-height: 480px;
     background: linear-gradient(to bottom, $green 62%, $white 38%);
   }
+}
+
+.landing-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 480px;
+  margin-bottom: 22px;
 }
 
 .landing-block__title {
@@ -52,6 +54,7 @@
   background-color: $green;
   width: calc(100% - 40px);
   margin-top: 273px;
+  font-size: 14px;
 }
 
 .landing-block__button a:visited {
@@ -61,11 +64,6 @@
 
 @media (min-width: $tablet-width) {
   .landing-block {
-    align-items: flex-start;
-    padding-left: 120px;
-    min-height: 823px;
-    margin-bottom: 4px;
-
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-size: 709px 609px;
     background-repeat: no-repeat;
@@ -78,6 +76,13 @@
     &::after {
       display: none;
     }
+  }
+
+  .landing-block__wrapper {
+    align-items: flex-start;
+    padding-left: 120px;
+    min-height: 823px;
+    margin-bottom: 4px;
   }
 
   .landing-block__title {
@@ -117,7 +122,6 @@
   .landing-block {
     padding: 130px 7.6% 0 7.6%;
     margin-bottom: 80px;
-    min-height: 565px;
 
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -138,6 +142,16 @@
       min-height: 1110px;
       background-color: $green;
     }
+  }
+
+  .landing-block__wrapper {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 565px;
   }
 
   .landing-block__title,

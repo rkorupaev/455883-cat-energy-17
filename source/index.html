@@ -38,10 +38,12 @@
     <main class="page-main">
       <h1 class="visually-hidden">Функциональное питание для котов</h1>
       <article class="landing-block">
-        <h2 class="landing-block__title">Функциональное питание для котов
-        </h2>
-        <p class="landing-block__slogan">Занялся собой? Займись котом!</p>
-        <a href="form.html" class="button landing-block__button button--green">Подобрать программу</a>
+        <div class="landing-block__wrapper">
+          <h2 class="landing-block__title">Функциональное питание для котов
+          </h2>
+          <p class="landing-block__slogan">Занялся собой? Займись котом!</p>
+          <a href="form.html" class="button landing-block__button button--green">Подобрать программу</a>
+        </div>
       </article>
       <section class="categories">
         <h2 class="visually-hidden">Наши программы</h2>
@@ -77,30 +79,32 @@
         </ul>
       </section>
       <article class="example">
-        <div class="example__text-container">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example__stat-wrapper">
-            <div class="example__wrapper">
-              <ul class="example__stats stats-list">
-                <li class="stats-list__item">
-                  <p class="stats-list__main-text">5 кг</p>
-                  <p class="stats-list__side-text">снижение веса</p>
-                </li>
-                <li class="stats-list__item stats-list__item--margin">
-                  <p class="stats-list__main-text">60 дней</p>
-                  <p class="stats-list__side-text stats-list__side-text--width">затрачено времени</p>
-                </li>
-              </ul>
+        <div class="example__block-wrapper">
+          <div class="example__text-container">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="example__stat-wrapper">
+              <div class="example__wrapper">
+                <ul class="example__stats stats-list">
+                  <li class="stats-list__item">
+                    <p class="stats-list__main-text">5 кг</p>
+                    <p class="stats-list__side-text">снижение веса</p>
+                  </li>
+                  <li class="stats-list__item stats-list__item--margin">
+                    <p class="stats-list__main-text">60 дней</p>
+                    <p class="stats-list__side-text stats-list__side-text--width">затрачено времени</p>
+                  </li>
+                </ul>
+              </div>
+              <p class="example__expenses">Затраты на питание: <span>15 000 руб.</span></p>
             </div>
-            <p class="example__expenses">Затраты на питание: <span>15 000 руб.</span></p>
           </div>
-        </div>
-        <div class="example__interactive example__interactive--before">
-          <div class="example__slider">
-            <span class="example__before">Было</span>
-            <div class="example__slider-wrapper"><span class="example__slider-cursor"></span></div>
-            <span class="example__after">Стало</span>
+          <div class="example__interactive example__interactive--before">
+            <div class="example__slider">
+              <span class="example__before">Было</span>
+              <div class="example__slider-wrapper"><span class="example__slider-cursor"></span></div>
+              <span class="example__after">Стало</span>
+            </div>
           </div>
         </div>
       </article>

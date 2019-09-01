@@ -183,6 +183,8 @@
     align-items: flex-start;
     min-height: auto;
     padding: 0 7.6%;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   .categories__item {
@@ -242,7 +244,7 @@
   .categories__button {
     border: none;
     margin: 0;
-    margin-bottom: 63px;
+    margin-bottom: 43px;
   }
 
   .categories__img-background--weight-loss::before {

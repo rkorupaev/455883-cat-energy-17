@@ -1,8 +1,11 @@
 .example {
   background-color: $grey;
+  padding: 0 20px;
+}
+
+.example__block-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 }
 
 .example__title {
@@ -247,11 +250,16 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    flex-direction: row;
     border: none;
     padding: 0 7.6%;
     background: linear-gradient(to top, $grey 72%, $white 28%);
     min-height: auto;
+  }
+
+  .example__block-wrapper {
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   .example__title {
