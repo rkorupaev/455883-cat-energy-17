@@ -7,7 +7,9 @@
   line-height: 60px;
   font-weight: 400;
   padding: 0 20px;
-  margin: 30px 0 36px 0;
+  padding-top: 14px;
+  margin: 0 0 24px 0;
+  border-top: 1px solid $border-grey;
 }
 
 .form__title-text {
@@ -46,7 +48,7 @@
   line-height: 24px;
   font-weight: 400;
   padding: 0 20px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   margin: 0;
 
   &::after {
@@ -68,11 +70,11 @@
   color: $text-black;
   resize: none;
 
-  height: 150px;
-  width: 250px;
+  height: 122px;
+  width: 251px;
   margin-left: 20px;
-  margin-bottom: 30px;
-  padding: 15px;
+  margin-bottom: 27px;
+  padding: 13px;
 }
 
 .form__additional-title {
@@ -112,8 +114,8 @@
   font-size: 14px;
   line-height: 16px;
   font-family: $side-text;
-  margin-top: 24px;
-  margin-bottom: 35px;
+  margin-top: 22px;
+  margin-bottom: 32px;
   color: $text-black;
 }
 
