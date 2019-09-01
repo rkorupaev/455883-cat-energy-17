@@ -26,8 +26,8 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="CAT ENEGRY" width="202" height="59">
         </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggler" type="button"><img src="img/icon-mobile-menu.svg" alt="Menu" width="24" height="18"></button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggler" type="button"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active"><a>Каталог продукции</a></li>
@@ -228,7 +228,7 @@
                 <table class="catalog__characteristics">
                   <tr>
                     <td class="catalog__field">Объем</td>
-                    <td class="catalog__value">500 г.</td>
+                    <td class="catalog__value">1000 г.</td>
                   </tr>
                   <tr>
                     <td class="catalog__field">Вкус</td>
@@ -277,7 +277,7 @@
             </div>
             <a class="catalog__button button button--green" href="#">Заказать</a>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--padding">
             <div class="catalog__showmore-block">
               <h3 class="catalog__showmore-title">Показать еще 100500 товаров</h3>
               <p class="catalog__showmore-text">На самом деле вкусов гораздо больше!</p>
@@ -340,8 +340,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="contacts">
-        <div class="contacts__wrapper contacts__wrapper--grey-background">
+      <section class="page-footer__contacts contacts">
+        <div class="contacts__wrapper">
           <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8<span>
               Санкт-Петербург</span></p>
@@ -370,17 +370,18 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link copyright__link--padding" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
         </a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__image" xmlns="http://www.w3.org/2000/svg" width="27" height="34">
+        <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__image" xmlns="http://www.w3.org/2000/svg" width="42" height="45" viewBox="0 0 60 60">
             <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </footer>
   </div>
+  <script src="js/script2.js"></script>
 </body>
 
 </html>
