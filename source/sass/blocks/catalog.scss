@@ -256,14 +256,31 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding: 0 40px;
+    padding: 0 7.7%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .catalog__title {
+    padding-top: 34px;
+  }
+
+  .catalog__list {
+    width: 1220px;
   }
 
   .catalog__item {
     min-width: 245px;
+    margin-bottom: 41px;
   }
 
   .catalog__characteristics {
-    min-width: 186px;
+    align-self: center;
+    min-width: 172px;
+  }
+
+  .catalog__button,
+  .catalog__showmore-button {
+    width: 69%;
   }
 }

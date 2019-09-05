@@ -202,32 +202,38 @@
     display: flex;
     flex-wrap: wrap;
 
-    min-height: 571px;
-    padding: 0 40px;
+    min-height: 525px;
+    padding: 0 7.7%;
+    padding-right: 6.5%;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   .additional-catalog__title {
-    line-height: 191px;
-    padding-left: 40px;
+    padding-left: 0;
     width: 100%;
     max-height: 194px;
+    padding-top: 34px;
+    padding-bottom: 33px;
 
     border: none;
 
     &::after {
-      width: 886px;
-      right: -70px;
+      width: 945px;
+      right: -110px;
+      top: 37%;
     }
 
     &::before {
       width: 70px;
-      left: -70px;
+      left: -110px;
+      top: 37%;
     }
   }
 
   .additional-catalog__list {
     width: 895px;
-    margin-bottom: 86px;
+    margin-bottom: 40px;
 
     border-top: 1px solid $border-catalog-table;
   }
@@ -235,8 +241,8 @@
   .additional-catalog__item {
     flex-wrap: nowrap;
     align-items: center;
-    min-height: 72px;
-    height: 72px;
+    min-height: 71px;
+    height: 71px;
     padding: 0;
   }
 
@@ -248,16 +254,21 @@
 
   .additional-catalog__item-title {
     width: 245px;
-    padding-right: 80px;
+    padding-right: 145px;
   }
 
   .additional-catalog__table {
     max-width: 351px;
+    padding-top: 8px;
   }
 
   .additional-catalog__amount,
   .additional-catalog__price {
     text-align: left;
+  }
+
+  .additional-catalog__price {
+    width: 78px;
   }
 
   .additional-catalog__button {
@@ -268,7 +279,9 @@
   .additional-catalog__image {
     width: 245px;
     height: auto;
-    margin: 0 40px 86px auto;
+    margin: 0;
+    margin-left: auto;
+    margin-bottom: 87px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
@@ -287,6 +300,6 @@
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 40px;
+    padding-top: 32px;
   }
 }
