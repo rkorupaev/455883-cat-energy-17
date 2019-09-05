@@ -253,12 +253,13 @@
   }
 
   .additional-catalog__item-title {
-    width: 245px;
+    flex-shrink: 0;
+    width: 178px;
     padding-right: 145px;
   }
 
   .additional-catalog__table {
-    max-width: 351px;
+    max-width: 327px;
     padding-top: 8px;
   }
 
@@ -278,10 +279,9 @@
 
   .additional-catalog__image {
     width: 245px;
-    height: auto;
+    min-height: 289px;
     margin: 0;
     margin-left: auto;
-    margin-bottom: 87px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 

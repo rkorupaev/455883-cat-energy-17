@@ -43,8 +43,8 @@
     opacity: 0.3;
   }
 
-  &:hover .additional-list__value:checked+span,
-  &:focus .additional-list__value:checked+span {
+  &:hover .additional-list__value:checked + span,
+  &:focus .additional-list__value:checked + span {
     border: 1px solid $radio-color-hover;
   }
 
@@ -57,7 +57,7 @@
   display: none;
 }
 
-.additional-list__value:checked+span {
+.additional-list__value:checked + span {
   position: absolute;
   display: block;
   width: 30px;
@@ -112,7 +112,7 @@
     }
   }
 
-  .additional-list__value:checked+span {
+  .additional-list__value:checked + span {
     width: 38px;
     height: 38px;
     top: -4px;
