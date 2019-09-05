@@ -126,6 +126,7 @@
     padding: 0 30px;
     padding-top: 16px;
     margin-bottom: 56px;
+    border: none;
   }
 
   .form__title-text {
@@ -260,80 +261,87 @@
 
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding: 0 7.7%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
   .form__title {
-    padding: 0 40px;
-    margin-bottom: 50px;
+    padding: 0;
+    padding-top: 35px;
+    margin-bottom: 55px;
   }
 
   .form__title-text {
-    padding-left: 40px;
-    margin-bottom: 69px;
+    padding: 0;
+    margin-bottom: 65px;
   }
 
   .form__lists-wrapper {
     display: flex;
-    margin-bottom: 73px;
+    margin-bottom: 68px;
   }
 
   .form__contacts-title {
-    padding: 40px;
-    padding-bottom: 70px;
+    padding: 0;
+    padding-bottom: 74px;
 
     &::after {
-      width: 776px;
-      right: -70px;
-      top: 40%;
+      width: 761px;
+      right: -110px;
+      top: 20%;
     }
 
     &::before {
       width: 70px;
-      left: -70px;
-      top: 40%;
+      left: -110px;
+      top: 20%;
     }
   }
 
   .form__comment-title {
-    padding: 0 40px;
-    padding-bottom: 70px;
+    padding: 0;
+    padding-bottom: 74px;
 
     &::after {
-      width: 1110px;
-      right: -70px;
+      width: 1095px;
+      right: -110px;
       top: 19%;
     }
 
     &::before {
       width: 70px;
-      left: -70px;
+      left: -110px;
       top: 19%;
     }
   }
 
   .form__textarea {
-    margin: 0 40px;
-    margin-bottom: 70px;
-    width: 1220px;
+    margin: 0;
+    margin-bottom: 64px;
+    width: 1186px;
   }
 
   .form__additional-title {
-    padding: 0 40px;
-    padding-bottom: 53px;
+    padding: 0;
+    padding-bottom: 60px;
 
     &::after {
-      width: 1080px;
-      right: -70px;
+      width: 1060px;
+      right: -110px;
       top: 22%;
     }
 
     &::before {
       width: 70px;
-      left: -70px;
+      left: -110px;
       top: 22%;
     }
   }
 
   .form__button-block {
-    padding: 0 40px;
+    padding: 0;
     margin-bottom: 84px;
   }
 

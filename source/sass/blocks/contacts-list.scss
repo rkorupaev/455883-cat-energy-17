@@ -102,16 +102,17 @@
   .contacts-list {
     min-height: auto;
     flex-direction: row;
-    padding: 0 40px;
+    padding: 0;
     padding-bottom: 70px;
   }
 
   .contacts-list__item {
     width: 570px;
+    flex-shrink: 0;
 
     &:first-child {
       margin: 0;
-      margin-right: 80px;
+      margin-right: 78px;
     }
   }
 }

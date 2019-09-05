@@ -132,16 +132,17 @@
 
 @media (min-width: $desktop-width) {
   .additional-list {
-    padding: 0 40px;
+    padding: 0;
     min-height: auto;
-    padding-bottom: 61px;
+    padding-bottom: 25px;
+    width: 1220px;
   }
 
   .additional-list__item {
-    width: 18.8%;
+    width: 186px;
 
     &:not(:last-child) {
-      margin-right: 39px;
+      margin-right: 80px;
     }
   }
 }
