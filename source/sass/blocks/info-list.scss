@@ -63,7 +63,7 @@
 @media (min-width: $tablet-width) {
   .info-list {
     padding: 0 70px;
-    margin-bottom: 72px;
+    margin-bottom: 75px;
     border: none;
   }
 
@@ -71,6 +71,19 @@
   .info-list__value {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .info-list__value {
+    margin-left: 19px;
+    min-height: 44px;
+  }
+
+  .info-list__item {
+    min-height: 50px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 

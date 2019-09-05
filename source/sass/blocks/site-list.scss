@@ -25,6 +25,7 @@
 
 .site-list__item--active a {
   border-bottom: 2px solid $green;
+  padding-bottom: 7px;
 }
 
 @media (min-width: $desktop-width) {
