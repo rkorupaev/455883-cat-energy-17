@@ -41,27 +41,27 @@
         <p class="form__title-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <div class="form__lists-wrapper">
           <ul class="form__general-info info-list">
-            <li class="info-list__item" tabindex="0">
+            <li class="info-list__item">
               <label class="info-list__name" for="name">Имя:*</label>
               <input class="info-list__value" id="name" type="text" placeholder="БАРСИК" required>
             </li>
-            <li class="info-list__item" tabindex="0">
+            <li class="info-list__item">
               <label class="info-list__name" for="weight">Вес (кг):*</label>
               <input class="info-list__value" id="weight" type="number" placeholder="7" required>
             </li>
-            <li class="info-list__item" tabindex="0">
+            <li class="info-list__item">
               <label class="info-list__name" for="age">Возраст (лет):</label>
               <input class="info-list__value" id="age" type="number" placeholder="7">
             </li>
           </ul>
           <div class="form__type type-list">
-            <label class="type-list__name">
+            <label class="type-list__name" tabindex="0">
               <input class="type-list__value" type="radio" name="type" checked>Похудение<span></span>
             </label>
-            <label class="type-list__name">
+            <label class="type-list__name" tabindex="0">
               <input class="type-list__value" type="radio" name="type">Набор массы<span></span>
             </label>
-            <label class="type-list__name">
+            <label class="type-list__name" tabindex="0">
               <input class="type-list__value" type="radio" name="type">Не знаю (Нужен ваш совет)<span></span>
             </label>
           </div>
@@ -88,7 +88,7 @@
         <h3 class="form__additional-title">Дополнительно</h3>
         <ul class="form__additional-list additional-list">
           <li class="additional-list__item additional-list__item--margin-right">
-            <label class="additional-list__name" for="sugarfree">
+            <label class="additional-list__name" for="sugarfree" tabindex="0">
               <input type="checkbox" class="additional-list__value" id="sugarfree"><span></span>Сахарозаменитель
             </label>
           </li>
