@@ -6,10 +6,11 @@
 .additional-catalog__title {
   position: relative;
   font-size: 24px;
-  line-height: 79px;
+  line-height: 24px;
   font-weight: 400;
   margin: 0;
-  padding-bottom: 5px;
+  padding-top: 28px;
+  padding-bottom: 32px;
 
   border-bottom: 1px solid $border-catalog-table;
 
@@ -20,7 +21,7 @@
     height: 3px;
     width: 53px;
     background-color: $green;
-    top: 50%;
+    top: 49%;
     right: -20px;
   }
 }
@@ -45,7 +46,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 14px;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .additional-catalog__table {
@@ -57,7 +58,14 @@
 .additional-catalog__button {
   margin-top: auto;
   margin-bottom: 17px;
+  line-height: 20px;
   width: 100%;
+}
+
+.additional-catalog__price,
+.additional-catalog__amount {
+  padding: 0;
+  line-height: 14px;
 }
 
 .additional-catalog__price {
