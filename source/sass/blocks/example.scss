@@ -15,7 +15,7 @@
   line-height: 60px;
   font-weight: 400;
   margin: 0;
-  padding-top: 17px;
+  padding-top: 13px;
   padding-bottom: 24px;
 }
 
@@ -24,7 +24,8 @@
   padding-right: 10px;
   color: $text-black;
   margin: 0;
-  margin-bottom: 26px;
+  margin-top: 2px;
+  margin-bottom: 24px;
 }
 
 .example__stats {
@@ -61,6 +62,7 @@
   background-image: url("../img/before-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: -19px -10px;
+  background-size: 227%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/before-mobile@2x.png");
@@ -74,6 +76,7 @@
   background-image: url("../img/after-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: -160px 0;
+  background-size: 227%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/after-mobile@2x.png");
@@ -174,7 +177,7 @@
     font-size: 20px;
     text-align: right;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 9px;
     line-height: 27px;
   }
 
@@ -188,6 +191,7 @@
     background-image: url("../img/before-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 17px 115%;
+    background-size: 195%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-tablet@2x.png");
@@ -199,7 +203,8 @@
 
     background-image: url("../img/after-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 100% 115%;
+    background-position: 101% 115%;
+    background-size: 195%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-tablet@2x.png");
@@ -264,20 +269,20 @@
 @media (min-width: $desktop-width) {
   .example {
     border: none;
-    padding: 0 7.6%;
+    padding: 0 3%;
     background: linear-gradient(to top, $grey 72%, $white 28%);
     min-height: 647px;
   }
 
   .example__block-wrapper {
     flex-direction: row;
-    max-width: 1300px;
+    max-width: 1220px;
     margin: 0 auto;
   }
 
   .example__title {
-    padding-top: 52px;
-    padding-bottom: 145px;
+    padding-top: 49px;
+    padding-bottom: 143px;
   }
 
   .example__text {
@@ -320,7 +325,8 @@
 
     background-image: url("../img/before-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 15%;
+    background-position: 0 25%;
+    background-size: 189%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-desktop@2x.png");
@@ -332,7 +338,8 @@
 
     background-image: url("../img/after-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 89% 8%;
+    background-position: 90% -6%;
+    background-size: 239%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-desktop@2x.png");

@@ -23,7 +23,49 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__item--vk {
-    padding-left: 24px;
+  .social__item {
+    &--vk {
+      padding-left: 10px;
+      padding-right: 24px;
+      padding-top: 6px;
+
+      & a svg {
+        width: 30px;
+        height: 16px;
+      }
+    }
+
+    &--inst {
+      padding-right: 18px;
+      padding-top: 4px;
+
+      & a svg {
+        width: 30px;
+        height: 23px;
+      }
+    }
+
+    &--fb {
+      & a svg {
+        width: 30px;
+        height: 28px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__item {
+    &--vk {
+      padding-top: 11px;
+    }
+
+    &--inst {
+      padding-top: 8px;
+    }
+
+    &--fb {
+      padding-top: 6px;
+    }
   }
 }

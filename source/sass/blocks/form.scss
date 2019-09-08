@@ -25,7 +25,9 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  padding: 30px 20px;
+  padding: 0 20px;
+  padding-top: 28px;
+  padding-bottom: 32px;
   margin: 0;
 
   border-top: 1px solid $border-catalog-top;
@@ -144,7 +146,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 70px;
-    padding-top: 77px;
+    padding-top: 75px;
     padding-bottom: 76px;
     border: none;
 
@@ -202,10 +204,10 @@
 
   .form__textarea {
     margin: 0 70px;
-    margin-bottom: 63px;
+    margin-bottom: 62px;
     padding-left: 19px;
     padding-top: 10px;
-    width: 597px;
+    width: 595px;
     min-height: 150px;
     font-size: 20px;
     line-height: 30px;
@@ -224,7 +226,7 @@
       width: 446px;
       height: 3px;
       right: 0;
-      top: 22%;
+      top: 24%;
       background-color: $green;
     }
 
@@ -235,7 +237,7 @@
       width: 30px;
       height: 3px;
       left: 0;
-      top: 22%;
+      top: 24%;
       background-color: $green;
     }
   }
@@ -252,21 +254,23 @@
     min-height: 52px;
     margin-right: 60px;
     font-size: 20px;
-    line-height: 52px;
+    line-height: 20px;
+    height: 52px;
   }
 
   .form__required-text {
+    display: block;
     font-size: 16px;
-    line-height: 52px;
     margin: 0;
+    margin-top: -5px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 0 7.7%;
-    max-width: 1300px;
+    padding: 0 3%;
+    max-width: 1220px;
     margin: 0 auto;
   }
 
@@ -291,14 +295,14 @@
     padding-bottom: 74px;
 
     &::after {
-      width: 58.5%;
-      right: -110px;
+      width: 57.5%;
+      right: -3%;
       top: 20%;
     }
 
     &::before {
-      width: 70px;
-      left: -110px;
+      width: 6%;
+      left: -9%;
       top: 20%;
     }
   }
@@ -308,14 +312,14 @@
     padding-bottom: 74px;
 
     &::after {
-      width: 84%;
-      right: -110px;
+      width: 85%;
+      right: -3%;
       top: 19%;
     }
 
     &::before {
-      width: 70px;
-      left: -110px;
+      width: 6%;
+      left: -9%;
       top: 19%;
     }
   }
@@ -331,14 +335,14 @@
     padding-bottom: 60px;
 
     &::after {
-      width: 88%;
-      right: -110px;
+      width: 82.3%;
+      right: -3%;
       top: 22%;
     }
 
     &::before {
-      width: 70px;
-      left: -110px;
+      width: 6%;
+      left: -9%;
       top: 22%;
     }
   }

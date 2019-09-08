@@ -1,7 +1,6 @@
 .main-nav {
   padding-top: 21px;
   height: 40px;
-  // min-height: 241px;
 }
 
 .main-nav__list {
@@ -86,6 +85,7 @@
     flex-direction: row;
     justify-content: space-between;
     font-size: 18px;
+    line-height: 24px;
     min-width: 440px;
     border: 0;
   }
@@ -98,6 +98,6 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     font-size: 20px;
-    min-width: 478px;
+    min-width: 476px;
   }
 }

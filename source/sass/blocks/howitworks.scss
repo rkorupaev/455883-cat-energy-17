@@ -15,7 +15,7 @@
   list-style: none;
   padding: 0;
   padding-left: 80px;
-  margin-top: 31px;
+  margin-top: 28px;
 }
 
 .howitworks__text {
@@ -25,7 +25,8 @@
 }
 
 .howitworks__item {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
+  padding-top: 3px;
   position: relative;
 
   &::before {
@@ -36,6 +37,7 @@
     height: 60px;
     position: absolute;
     left: -80px;
+    top: -1px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -83,7 +85,7 @@
   .howitworks {
     padding: 0 30px;
     margin-top: 14px;
-    margin-bottom: 59px;
+    margin-bottom: 54px;
   }
 
   .howitworks__title {
@@ -111,7 +113,7 @@
   }
 
   .howitworks__text {
-    padding-top: 112px;
+    padding-top: 109px;
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;
@@ -119,7 +121,7 @@
 
   .howitworks__item--healthy {
     margin-right: 139px;
-    padding-bottom: 89px;
+    padding-bottom: 87px;
 
     &::after {
       position: absolute;
@@ -177,9 +179,9 @@
 
 @media (min-width: $desktop-width) {
   .howitworks {
-    max-width: 1300px;
+    max-width: 1220px;
     margin: 0 auto;
-    padding: 0 7.6%;
+    padding: 0 3%;
     margin-top: 43px;
     min-width: 1220px;
     margin-bottom: 30px;
@@ -192,6 +194,32 @@
 
     &--changes {
       margin-right: 0;
+    }
+  }
+
+  .howitworks__item--healthy {
+    &::before {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-size: 62%;
+      }
+    }
+  }
+
+  .howitworks__item--powder::before {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 62%;
+    }
+  }
+
+  .howitworks__item--functionalfood::before {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 62%;
+    }
+  }
+
+  .howitworks__item--changes::before {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 62%;
     }
   }
 }

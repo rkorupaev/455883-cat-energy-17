@@ -43,11 +43,17 @@
 
 @media (min-width: $tablet-width) {
   .copyright__link--padding {
-    padding-top: 15px;
+    padding-top: 17px;
     padding-right: 14px;
   }
 
   .copyright__link--icon {
     margin-top: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link--padding {
+    padding-right: 17px;
   }
 }

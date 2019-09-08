@@ -9,6 +9,10 @@
 
   display: flex;
   align-items: center;
+  background-color: $white;
+}
+
+.contacts__wrapper--grey {
   background-color: $grey;
 }
 
@@ -54,11 +58,13 @@
   .contacts__wrapper {
     min-height: 200px;
     padding: 0 30px;
+    background-color: $grey;
   }
 
   .contacts__title,
   .contacts__text {
     width: 172px;
+    margin-top: 21px;
   }
 
   .contacts__title {
@@ -118,13 +124,13 @@
 
   .contacts__title {
     margin-left: 75px;
-    margin-top: 66px;
+    margin-top: 62px;
   }
 
   .contacts__text {
     margin-right: 72px;
     text-align: left;
-    margin-top: 65px;
+    margin-top: 61px;
   }
 
   .contacts__map {

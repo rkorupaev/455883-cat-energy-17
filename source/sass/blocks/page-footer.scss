@@ -53,8 +53,9 @@
 
   .page-footer__social {
     border: none;
+    width: 125px;
     min-width: auto;
-    padding-top: 67px;
+    padding-top: 60px;
     padding-bottom: 64px;
   }
 
@@ -71,6 +72,11 @@
   }
 
   .page-footer__copyright {
-    padding-right: 6.5%;
+    padding-right: 7.5%;
+  }
+
+  .page-footer__social {
+    width: 124px;
+    padding-top: 53px;
   }
 }
