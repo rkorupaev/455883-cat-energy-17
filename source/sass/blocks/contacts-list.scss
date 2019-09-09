@@ -75,7 +75,8 @@
   .contacts-list {
     min-height: 124px;
     margin: 0;
-    padding: 0 70px;
+    padding-left: 70px;
+    padding-right: 66px;
     padding-bottom: 63px;
   }
 
@@ -92,9 +93,13 @@
   .contacts-list__value {
     min-height: 48px;
     margin-left: 20px;
-    padding-left: 17px;
+    padding-left: 19px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .contacts-list__value--margin {
+    margin-left: 13px;
   }
 }
 
